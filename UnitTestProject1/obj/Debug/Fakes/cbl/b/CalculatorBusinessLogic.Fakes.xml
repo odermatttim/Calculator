@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CalculatorBusinessLogic.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:CalculatorBusinessLogic.Fakes.ShimCalculation">
+            <summary>Shim type of CalculatorBusinessLogic.Calculation</summary>
+        </member>
+        <member name="M:CalculatorBusinessLogic.Fakes.ShimCalculation.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CalculatorBusinessLogic.Fakes.ShimCalculation.#ctor(CalculatorBusinessLogic.Calculation)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:CalculatorBusinessLogic.Fakes.ShimCalculation.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CalculatorBusinessLogic.Fakes.ShimCalculation.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CalculatorBusinessLogic.Fakes.ShimCalculation.Bind(CalculatorBusinessLogic.ICalculation)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CalculatorBusinessLogic.Fakes.ShimCalculation.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CalculatorBusinessLogic.Fakes.ShimCalculation.CalculateCollectionOfDoubleCollectionOfChar">
+            <summary>Sets the shim of Calculation.Calculate(Collection`1&lt;Double&gt; operandsCollection, Collection`1&lt;Char&gt; operatorsCollection)</summary>
+        </member>
+        <member name="P:CalculatorBusinessLogic.Fakes.ShimCalculation.Constructor">
+            <summary>Sets the shim of Calculation.Calculation()</summary>
+        </member>
+        <member name="P:CalculatorBusinessLogic.Fakes.ShimCalculation.ResultGet">
+            <summary>Sets the shim of Calculation.get_Result()</summary>
+        </member>
+        <member name="P:CalculatorBusinessLogic.Fakes.ShimCalculation.ResultSetDouble">
+            <summary>Sets the shim of Calculation.set_Result(Double value)</summary>
+        </member>
+        <member name="T:CalculatorBusinessLogic.Fakes.ShimCalculation.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CalculatorBusinessLogic.Fakes.ShimCalculation.AllInstances.CalculateCollectionOfDoubleCollectionOfChar">
+            <summary>Sets the shim of Calculation.Calculate(Collection`1&lt;Double&gt; operandsCollection, Collection`1&lt;Char&gt; operatorsCollection)</summary>
+        </member>
+        <member name="P:CalculatorBusinessLogic.Fakes.ShimCalculation.AllInstances.ResultGet">
+            <summary>Sets the shim of Calculation.get_Result()</summary>
+        </member>
+        <member name="P:CalculatorBusinessLogic.Fakes.ShimCalculation.AllInstances.ResultSetDouble">
+            <summary>Sets the shim of Calculation.set_Result(Double value)</summary>
+        </member>
+        <member name="T:CalculatorBusinessLogic.Fakes.StubCalculation">
+            <summary>Stub type of CalculatorBusinessLogic.Calculation</summary>
+        </member>
+        <member name="M:CalculatorBusinessLogic.Fakes.StubCalculation.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CalculatorBusinessLogic.Fakes.StubCalculation.InitializeStub">
+            <summary>Initializes a new instance of type StubCalculation</summary>
+        </member>
+        <member name="P:CalculatorBusinessLogic.Fakes.StubCalculation.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CalculatorBusinessLogic.Fakes.StubCalculation.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CalculatorBusinessLogic.Fakes.StubCalculation.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:CalculatorBusinessLogic.Fakes.StubICalculation">
+            <summary>Stub type of CalculatorBusinessLogic.ICalculation</summary>
+        </member>
+        <member name="M:CalculatorBusinessLogic.Fakes.StubICalculation.#ctor">
+            <summary>Initializes a new instance of type StubICalculation</summary>
+        </member>
+        <member name="F:CalculatorBusinessLogic.Fakes.StubICalculation.CalculateCollectionOfDoubleCollectionOfChar">
+            <summary>Sets the stub of ICalculation.Calculate(Collection`1&lt;Double&gt; operandsCollection, Collection`1&lt;Char&gt; operatorsCollection)</summary>
+        </member>
+        <member name="M:CalculatorBusinessLogic.Fakes.StubICalculation.cbl::CalculatorBusinessLogic#ICalculation#Calculate(System.Collections.ObjectModel.Collection{System.Double},System.Collections.ObjectModel.Collection{System.Char})">
+            <summary>Sets the stub of ICalculation.Calculate(Collection`1&lt;Double&gt; operandsCollection, Collection`1&lt;Char&gt; operatorsCollection)</summary>
+        </member>
+    </members>
+</doc>

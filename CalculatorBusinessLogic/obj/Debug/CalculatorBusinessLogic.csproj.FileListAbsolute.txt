@@ -1,0 +1,4 @@
+\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorBusinessLogic\bin\Debug\CalculatorBusinessLogic.dll
+\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorBusinessLogic\bin\Debug\CalculatorBusinessLogic.pdb
+\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorBusinessLogic\obj\Debug\CalculatorBusinessLogic.dll
+\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorBusinessLogic\obj\Debug\CalculatorBusinessLogic.pdb

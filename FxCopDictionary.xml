@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dictionary>
+  <Words>
+    <Unrecognized>
+      <!-- Excludes a term from the list of terms that code analysis identifies as correctly spelled. Terms are not case-sensitive. -->
+      <!-- e.g. <Word></Word> -->
+    </Unrecognized>
+    
+    <Recognized>
+      <!-- To include a term in the list of terms that code analysis identifies as correctly spelled. Terms are not case-sensitive.-->
+      <!-- e.g. <Word></Word> -->
+      <Word>Dml</Word>
+      <Word>ACK</Word>
+      <Word>Nak</Word>
+      <Word>Ack</Word>
+      <Word>Eot</Word>
+      <Word>ANode</Word>
+      <Word>POCT1AMessage</Word>
+      <Word>POCT1AMessageReport</Word>
+      <Word>Obs</Word>
+      <Word>OBS</Word>
+      <Word>Poc</Word>
+      <Word>Poct1a</Word>
+      <Word>POCT</Word>
+      <Word>Cobas</Word>
+      <Word>appender</Word>
+      <Word>testbed</Word>
+      <Word>Manet</Word>
+      <Word>param</Word>
+      <Word>dto</Word>
+      <Word>dtos</Word>
+      <Word>Liat</Word>
+      <Word>Oru</Word>
+      <Word>Ack</Word>
+      <Word>Dpm</Word>
+      <Word>Meux</Word>
+      <Word>Testee</Word>
+      <Word>Axeda</Word>
+      <Word>Hrd</Word>
+      <Word>Mrd</Word>
+      <Word>Usb</Word>
+      <Word>Emul</Word>
+      <Word>yyyy-MM-dd</Word>
+      <Word>datapoints</Word>
+      <Word>Kgt</Word>
+      <Word>Faba</Word>
+      <Word>Gmb</Word>
+      <Word>Inc</Word>
+      <Word>Sandhofer</Word>
+      <Word>Strasse</Word>
+      <Word>renamer</Word>
+      <Word>Itf</Word>
+      <Word>Cref</Word>
+      <Word>Lut</Word>
+      <Word>Manuf</Word>
+    </Recognized>
+    
+    <Deprecated>
+      <!-- To include a term in the list of terms that code analysis identifies as deprecated. Terms are not case-sensitive.-->
+      <!--<Term PreferredAlternate=""></Term>-->
+    </Deprecated>
+    
+    <Compound>
+      <!-- Identifies some terms as single, discrete terms rather than a compound term. Compound words are not case-sensitive. -->
+      <!-- Definition from web: A compound word is made up of two words that come together to make one new word. e.g Bed+time = bedtime. -->
+      <!--<Term></Term>-->
+      <!--<Term CompoundAlternate=""></Term>-->
+    </Compound>    
+    
+    <DiscreteExceptions>
+      <!-- Exclude a term that is identifies as a single, discrete word as a part of a compound word. Terms are not case-sensitive. -->
+    </DiscreteExceptions>
+  </Words>
+  
+  <Acronyms>
+    <!-- Definition from web:  A word that is formed by combining some parts (usually the first letters) of some other terms. e.g. FYI: For Your Interest.  -->
+    <CasingExceptions>
+      <Acronym>POCT</Acronym>
+      <Acronym>HDR</Acronym>  <!-- HL7 protocol tag -->
+      <Acronym>ACK</Acronym>  <!-- HL7 protocol tag -->
+      <Acronym>MSH</Acronym>  <!-- HL7 protocol tag -->
+      <Acronym>MSA</Acronym>  <!-- HL7 protocol tag -->
+      <Acronym>MSH</Acronym>  <!-- HL7 protocol tag -->
+      <Acronym>MSA</Acronym>  <!-- HL7 protocol tag -->
+      <Acronym>PID</Acronym>  <!-- HL7 protocol tag -->
+      <Acronym>OBX</Acronym>  <!-- HL7 protocol tag -->
+      <Acronym>ORC</Acronym>  <!-- HL7 protocol tag -->
+      <Acronym>OBR</Acronym>  <!-- HL7 protocol tag -->
+      <Acronym>ERR</Acronym>  <!-- HL7 protocol tag -->
+      <Acronym>NTE</Acronym>  <!-- HL7 protocol tag -->
+      <Acronym>DML</Acronym>  <!-- Connectivity tag -->
+      <Acronym>LIS</Acronym>  <!-- Connectivity tag -->
+      <Acronym>RGT</Acronym>  <!-- POC1A protocol tag -->
+      <Acronym>SVC</Acronym>  <!-- POC1A protocol tag -->
+      <Acronym>OPR</Acronym>  <!-- POC1A protocol tag -->
+      <Acronym>OBS</Acronym>  <!-- POC1A protocol tag -->
+      <Acronym>PT</Acronym>   <!-- POC1A protocol tag -->
+      <Acronym>CTC</Acronym>  <!-- POC1A protocol tag -->
+      <Acronym>ORD</Acronym>  <!-- POC1A protocol tag -->
+      <Acronym>LQC</Acronym>  <!-- POC1A protocol tag -->
+      <Acronym>PCR</Acronym>
+      <Acronym>EDI</Acronym>  <!-- part of communication engine(?) -->
+      <Acronym>DTO</Acronym>
+      <Acronym>PIN</Acronym>  <!-- personal identification number -->
+      <Acronym>VM</Acronym>   <!-- virtual machine -->
+      <Acronym>IOCTL</Acronym>  <!-- input output control command id for driver commands -->
+      <Acronym>USB</Acronym> <!-- USB is well known -->
+      <Acronym>NETCF</Acronym> <!-- OpenNETCF is a library name -->
+      <Acronym>MANET</Acronym> <!-- MANET is needed by the domain -->
+      <Acronym>IQM</Acronym>
+      <Acronym>FPGA</Acronym>
+      <Acronym>MCU</Acronym>
+      <Acronym>RAM</Acronym>
+    </CasingExceptions>
+  </Acronyms>
+</Dictionary>

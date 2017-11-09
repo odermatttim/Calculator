@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorUI", "Calculator\CalculatorUI.csproj", "{4AE2B877-4F3A-4F4A-A645-A153DAC10A89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiUnitTests", "UnitTestProject1\UiUnitTests.csproj", "{C12C2B17-1D68-42BF-89E5-CDD97FD6D604}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorBusinessLogic", "CalculatorBusinessLogic\CalculatorBusinessLogic.csproj", "{BE04873F-588F-405B-84EF-BE3E70FE7275}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorParsing", "CalculatorParsing\CalculatorParsing.csproj", "{F3CE85DD-03EB-43F6-81F3-5F046EDE6CE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParsingUnitTests", "ParsingUnitTests\ParsingUnitTests.csproj", "{8A86978A-A7E4-47A3-8A6B-AEA4DABC52BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicUnitTests", "CalculatorUnitTest\BusinessLogicUnitTests.csproj", "{98D817E5-831A-46E1-A565-885E0E02F063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{BE4B0B6F-9BC7-44CC-B7CB-7B337CC58B94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AE2B877-4F3A-4F4A-A645-A153DAC10A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AE2B877-4F3A-4F4A-A645-A153DAC10A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AE2B877-4F3A-4F4A-A645-A153DAC10A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AE2B877-4F3A-4F4A-A645-A153DAC10A89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C12C2B17-1D68-42BF-89E5-CDD97FD6D604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12C2B17-1D68-42BF-89E5-CDD97FD6D604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12C2B17-1D68-42BF-89E5-CDD97FD6D604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12C2B17-1D68-42BF-89E5-CDD97FD6D604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE04873F-588F-405B-84EF-BE3E70FE7275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE04873F-588F-405B-84EF-BE3E70FE7275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE04873F-588F-405B-84EF-BE3E70FE7275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE04873F-588F-405B-84EF-BE3E70FE7275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3CE85DD-03EB-43F6-81F3-5F046EDE6CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3CE85DD-03EB-43F6-81F3-5F046EDE6CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3CE85DD-03EB-43F6-81F3-5F046EDE6CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3CE85DD-03EB-43F6-81F3-5F046EDE6CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A86978A-A7E4-47A3-8A6B-AEA4DABC52BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A86978A-A7E4-47A3-8A6B-AEA4DABC52BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A86978A-A7E4-47A3-8A6B-AEA4DABC52BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A86978A-A7E4-47A3-8A6B-AEA4DABC52BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D817E5-831A-46E1-A565-885E0E02F063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D817E5-831A-46E1-A565-885E0E02F063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D817E5-831A-46E1-A565-885E0E02F063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D817E5-831A-46E1-A565-885E0E02F063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE4B0B6F-9BC7-44CC-B7CB-7B337CC58B94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE4B0B6F-9BC7-44CC-B7CB-7B337CC58B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE4B0B6F-9BC7-44CC-B7CB-7B337CC58B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE4B0B6F-9BC7-44CC-B7CB-7B337CC58B94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

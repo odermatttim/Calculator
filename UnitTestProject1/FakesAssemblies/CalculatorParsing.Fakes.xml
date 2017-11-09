@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CalculatorParsing.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:CalculatorParsing.Fakes.ShimParsing">
+            <summary>Shim type of CalculatorParsing.Parsing</summary>
+        </member>
+        <member name="M:CalculatorParsing.Fakes.ShimParsing.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CalculatorParsing.Fakes.ShimParsing.#ctor(CalculatorParsing.Parsing)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:CalculatorParsing.Fakes.ShimParsing.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CalculatorParsing.Fakes.ShimParsing.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CalculatorParsing.Fakes.ShimParsing.Bind(CalculatorParsing.IParsing)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CalculatorParsing.Fakes.ShimParsing.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CalculatorParsing.Fakes.ShimParsing.Constructor">
+            <summary>Sets the shim of Parsing.Parsing()</summary>
+        </member>
+        <member name="P:CalculatorParsing.Fakes.ShimParsing.ReadOperatorsOutOfInputString">
+            <summary>Sets the shim of Parsing.ReadOperatorsOutOfInput(String userInput)</summary>
+        </member>
+        <member name="P:CalculatorParsing.Fakes.ShimParsing.SplitInputIntoOperandsString">
+            <summary>Sets the shim of Parsing.SplitInputIntoOperands(String userInput)</summary>
+        </member>
+        <member name="T:CalculatorParsing.Fakes.ShimParsing.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CalculatorParsing.Fakes.ShimParsing.AllInstances.ReadOperatorsOutOfInputString">
+            <summary>Sets the shim of Parsing.ReadOperatorsOutOfInput(String userInput)</summary>
+        </member>
+        <member name="P:CalculatorParsing.Fakes.ShimParsing.AllInstances.SplitInputIntoOperandsString">
+            <summary>Sets the shim of Parsing.SplitInputIntoOperands(String userInput)</summary>
+        </member>
+        <member name="T:CalculatorParsing.Fakes.StubIParsing">
+            <summary>Stub type of CalculatorParsing.IParsing</summary>
+        </member>
+        <member name="M:CalculatorParsing.Fakes.StubIParsing.#ctor">
+            <summary>Initializes a new instance of type StubIParsing</summary>
+        </member>
+        <member name="M:CalculatorParsing.Fakes.StubIParsing.cp::CalculatorParsing#IParsing#ReadOperatorsOutOfInput(System.String)">
+            <summary>Sets the stub of IParsing.ReadOperatorsOutOfInput(String userInput)</summary>
+        </member>
+        <member name="M:CalculatorParsing.Fakes.StubIParsing.cp::CalculatorParsing#IParsing#SplitInputIntoOperands(System.String)">
+            <summary>Sets the stub of IParsing.SplitInputIntoOperands(String userInput)</summary>
+        </member>
+        <member name="F:CalculatorParsing.Fakes.StubIParsing.ReadOperatorsOutOfInputString">
+            <summary>Sets the stub of IParsing.ReadOperatorsOutOfInput(String userInput)</summary>
+        </member>
+        <member name="F:CalculatorParsing.Fakes.StubIParsing.SplitInputIntoOperandsString">
+            <summary>Sets the stub of IParsing.SplitInputIntoOperands(String userInput)</summary>
+        </member>
+        <member name="T:CalculatorParsing.Fakes.StubParsing">
+            <summary>Stub type of CalculatorParsing.Parsing</summary>
+        </member>
+        <member name="M:CalculatorParsing.Fakes.StubParsing.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CalculatorParsing.Fakes.StubParsing.InitializeStub">
+            <summary>Initializes a new instance of type StubParsing</summary>
+        </member>
+        <member name="P:CalculatorParsing.Fakes.StubParsing.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CalculatorParsing.Fakes.StubParsing.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CalculatorParsing.Fakes.StubParsing.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

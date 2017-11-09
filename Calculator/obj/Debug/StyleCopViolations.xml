@@ -1,0 +1,3 @@
+<StyleCopViolations>
+  <Violation Section="Root.[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage(&quot;Microsoft.Performance&quot;, &quot;CA1824:MarkAssembliesWithNeutralResourcesLanguage&quot;)]" LineNumber="10" Source="\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\Calculator\GlobalSuppressions.cs" RuleNamespace="StyleCop.CSharp.MaintainabilityRules" Rule="CodeAnalysisSuppressionMustHaveJustification" RuleId="SA1404">A Code Analysis suppression must contain a non-empty justification describing the reason for the suppression.</Violation>
+</StyleCopViolations>
