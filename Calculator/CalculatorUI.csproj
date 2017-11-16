@@ -103,9 +103,13 @@
     <CodeAnalysisDictionary Include="Properties\FxCopDictionary.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CalculatorBusinessLogic\CalculatorBusinessLogic.csproj">
+    <ProjectReference Include="..\CalculatorBusinessLogic\CalculatorCalculation.csproj">
       <Project>{be04873f-588f-405b-84ef-be3e70fe7275}</Project>
-      <Name>CalculatorBusinessLogic</Name>
+      <Name>CalculatorCalculation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CalculatorLogic\CalculatorLogic.csproj">
+      <Project>{f6bbcf4b-dc20-44f2-8050-f750fcf23d3b}</Project>
+      <Name>CalculatorLogic</Name>
     </ProjectReference>
     <ProjectReference Include="..\CalculatorParsing\CalculatorParsing.csproj">
       <Project>{f3ce85dd-03eb-43f6-81f3-5f046ede6ce3}</Project>

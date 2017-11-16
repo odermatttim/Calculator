@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
 using CalculatorBusinessLogic;
+using CalculatorLogic;
 using CalculatorParsing;
 
 namespace CalculatorUI
@@ -16,56 +17,21 @@ namespace CalculatorUI
     public class CalculatorViewModel
     {
         public string UserInput { get; set; }
-        public double Result { get; set; }
-        private readonly IParsing parsing;
-        private readonly ICalculation calculation;
-        private Collection<char> operatorsCollection;
-        private Collection<double> operandsCollection;
-        private readonly Collection<string> errorMessages = new Collection<string>()
-        {
-            "Operators \"*\" and \"/\" are not allowed. \nPlease only use numbers and operators \"-\" or \"+\" for your input.",
-            "Use at least one operator \"-\" or \"+\" and two numbers.",
-            "One or multiple operands have an illegal value and/or you haven't put an operator between every two operands. \nPlease only use numbers and operators \"-\" or \"+\" for your input."
-        };
-        public Collection<string> ErrorMessages
-        {
-            get { return this.errorMessages; }
-        }
+        private readonly ISequenceLogic sequenceLogic;
 
         public CalculatorViewModel(IParsing parsing, ICalculation calculation)
         {
-            this.parsing = parsing;
-            this.calculation = calculation;
+            sequenceLogic = new SequenceLogic(parsing, calculation, UserInput);
         }
 
         public string StartCalculation()
         {
-            this.operatorsCollection = this.parsing.ReadOperatorsOutOfInput(this.UserInput);
-            if (this.UserInput.Contains("*") || this.UserInput.Contains(":") || this.UserInput.Contains("/"))
+            sequenceLogic.Calculate();
+            if (sequenceLogic.Result.StartsWith("Your Input:"))
             {
-                return this.ShowErrorMessage(this.ErrorMessages[0]);
+                MessageBox.Show(sequenceLogic.Result, "Error", MessageBoxButton.OK);
             }
-            try
-            {
-                this.operandsCollection = this.parsing.SplitInputIntoOperands(this.UserInput);
-            }
-            catch (Exception)
-            {
-                return this.ShowErrorMessage(this.ErrorMessages[2]);
-            }
-            if (this.operatorsCollection.Count == 0 || this.operandsCollection.Count <= 1)
-            {
-                return this.ShowErrorMessage(this.ErrorMessages[1]);
-            }
-            this.Result = this.calculation.Calculate(this.operandsCollection, this.operatorsCollection);
-            return string.Empty;
-        }
-
-        public string ShowErrorMessage(string specificMessage)
-        {
-            string errorMessage = string.Format(CultureInfo.CurrentCulture, "Your Input: \"{0}\" has a wrong format.\n{1}", this.UserInput, specificMessage);
-            MessageBox.Show(errorMessage, "Error", MessageBoxButton.OK);
-            return errorMessage;
+            return sequenceLogic.Result;
         }
     }
 }

@@ -8,7 +8,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
-    <ProjectGuid>4dea14ab-a790-40cf-bcf6-d895b2e4424d</ProjectGuid>
+    <ProjectGuid>27d0decf-147d-4c3f-9a80-1ba5dd1d3917</ProjectGuid>
     <!-- update GUID here -->
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -61,6 +61,10 @@
     </Reference>
     <Reference Include="CalculatorBusinessLogic">
       <HintPath>\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorBusinessLogic\bin\Debug\CalculatorBusinessLogic.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CalculatorLogic">
+      <HintPath>\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorLogic\bin\Debug\CalculatorLogic.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Castle.Core">

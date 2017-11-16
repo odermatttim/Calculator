@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CalculatorBusinessLogic;
 using CalculatorBusinessLogic.Fakes;
+using CalculatorLogic;
 using CalculatorParsing;
 using CalculatorParsing.Fakes;
 using CalculatorUI;
@@ -19,10 +20,10 @@ namespace ParsingUnitTests
     {
         private StubIParsing parsingStub;
         private StubICalculation calculationStub;
-        private CalculatorViewModel testee;
+        private SequenceLogic testee;
         private Collection<double> operandsCollection;
         private Collection<char> operatorsCollection;
-        private string expectedErrorMessage;
+        private string expectedResult;
         private const int irrelevantCalculationResult = 0;
 
         [TestInitialize]
@@ -30,47 +31,47 @@ namespace ParsingUnitTests
         {
             this.parsingStub = new StubIParsing();
             this.calculationStub = new StubICalculation();
-            this.testee = new CalculatorViewModel(this.parsingStub, calculationStub);
+            this.testee = new SequenceLogic(this.parsingStub, calculationStub);
         }
 
         [TestMethod]
         public void OptionOneValid()
         {
-            operandsCollection = new Collection<double> { 4.395, 6 };
-            operatorsCollection = new Collection<char> { '+' };
-            expectedErrorMessage = string.Empty;
+            operandsCollection = new Collection<double>{4.395, 6};
+            operatorsCollection = new Collection<char>{'+'};
+            expectedResult = "10.395";
 
             // Arrange
             this.parsingStub.SplitInputIntoOperandsString = (userInput) => operandsCollection;
             this.parsingStub.ReadOperatorsOutOfInputString = (userInput) => operatorsCollection;
-            this.calculationStub.CalculateCollectionOfDoubleCollectionOfChar = (doubleValues, charValues) => irrelevantCalculationResult;
+            this.calculationStub.CalculateCollectionOfDoubleCollectionOfChar = (doubleValues, charValues) => double.Parse(expectedResult);
 
             // Act
             testee.UserInput = "4.395 + 6";
-            string errorMessage = testee.StartCalculation();
+            testee.Calculate();
 
             // Assert
-            errorMessage.Should().Be(expectedErrorMessage);
+            testee.Result.Should().Be(expectedResult);
         }
 
         [TestMethod]
         public void OptionTwoValid()
         {
-            operandsCollection = new Collection<double> { 2, 6.43, 3 };
-            operatorsCollection = new Collection<char> { '+', '-' };
-            expectedErrorMessage = string.Empty;
+            operandsCollection = new Collection<double>{2, 6.43, 3};
+            operatorsCollection = new Collection<char>{'+', '-'};
+            expectedResult = "5.43";
 
             // Arrange
             this.parsingStub.SplitInputIntoOperandsString = (userInput) => operandsCollection;
             this.parsingStub.ReadOperatorsOutOfInputString = (userInput) => operatorsCollection;
-            this.calculationStub.CalculateCollectionOfDoubleCollectionOfChar = (doubleValues, charValues) => irrelevantCalculationResult;
+            this.calculationStub.CalculateCollectionOfDoubleCollectionOfChar = (doubleValues, charValues) => double.Parse(expectedResult);
 
             // Act
             testee.UserInput = "2 + 6.43 - 3";
-            string errorMessage = testee.StartCalculation();
+            testee.Calculate();
 
             // Assert
-            errorMessage.Should().Be(expectedErrorMessage);
+            testee.Result.Should().Be(expectedResult);
         }
 
         [TestMethod]
@@ -78,7 +79,7 @@ namespace ParsingUnitTests
         {
             operandsCollection = new Collection<double> { 4.395, 6 };
             operatorsCollection = new Collection<char>();
-            expectedErrorMessage = testee.ErrorMessages[1];
+            expectedResult = testee.ErrorMessages[1];
 
             // Arrange
             this.parsingStub.SplitInputIntoOperandsString = (userInput) => operandsCollection;
@@ -87,10 +88,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "4.395 6";
-            string errorMessage = testee.StartCalculation();
+            testee.Calculate();
 
             // Assert
-            errorMessage.Should().Contain(expectedErrorMessage);
+            testee.Result.Should().Contain(expectedResult);
         }
 
         [TestMethod]
@@ -98,7 +99,7 @@ namespace ParsingUnitTests
         {
             operandsCollection = new Collection<double> { 4.395 };
             operatorsCollection = new Collection<char> { '+' };
-            expectedErrorMessage = testee.ErrorMessages[1];
+            expectedResult = testee.ErrorMessages[1];
 
             // Arrange
             this.parsingStub.SplitInputIntoOperandsString = (userInput) => operandsCollection;
@@ -107,10 +108,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "4.395 +";
-            string errorMessage = testee.StartCalculation();
+            testee.Calculate();
 
             // Assert
-            errorMessage.Should().Contain(expectedErrorMessage);
+            testee.Result.Should().Contain(expectedResult);
         }
 
         [TestMethod]
@@ -118,7 +119,7 @@ namespace ParsingUnitTests
         {
             operandsCollection = new Collection<double>();
             operatorsCollection = new Collection<char> { '-', '+' };
-            expectedErrorMessage = testee.ErrorMessages[1];
+            expectedResult = testee.ErrorMessages[1];
 
             // Arrange
             this.parsingStub.SplitInputIntoOperandsString = (userInput) => operandsCollection;
@@ -127,10 +128,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "- +";
-            string errorMessage = testee.StartCalculation();
+            testee.Calculate();
 
             // Assert
-            errorMessage.Should().Contain(expectedErrorMessage);
+            testee.Result.Should().Contain(expectedResult);
         }
     }
 }

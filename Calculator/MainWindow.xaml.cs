@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using CalculatorBusinessLogic;
+using CalculatorLogic;
 using CalculatorParsing;
 
 namespace CalculatorUI
@@ -23,9 +24,9 @@ namespace CalculatorUI
     /// </summary>
     public partial class MainWindow : Window
     {
-        private static readonly IParsing Parsing = new Parsing();
-        private static readonly ICalculation Calculation = new Calculation();
-        private readonly CalculatorViewModel viewModel = new CalculatorViewModel(Parsing, Calculation);
+        private static readonly IParsing parsing = new Parsing();
+        private static readonly ICalculation calculation = new Calculation();
+        private readonly CalculatorViewModel viewModel = new CalculatorViewModel(parsing, calculation);
 
         public MainWindow()
         {
@@ -34,10 +35,10 @@ namespace CalculatorUI
 
         private void CalculateButton_Click(object sender, RoutedEventArgs e)
         {
-            string errorMessage = this.viewModel.StartCalculation();
-            if (string.IsNullOrEmpty(errorMessage))
+            string result = this.viewModel.StartCalculation();
+            if (!result.StartsWith("Your Input:"))
             {
-                OutputTextBlock.Text = Convert.ToString(this.viewModel.Result, CultureInfo.CurrentCulture);   
+                OutputTextBlock.Text = result;
                 return;
             }
             OutputTextBlock.Text = "-";
@@ -45,7 +46,7 @@ namespace CalculatorUI
 
         private void InputTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            this.viewModel.UserInput = InputTextBox.Text;
+            viewModel.UserInput = InputTextBox.Text;
         }
     }
 }

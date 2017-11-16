@@ -7,15 +7,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorUI", "Calculator\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiUnitTests", "UnitTestProject1\UiUnitTests.csproj", "{C12C2B17-1D68-42BF-89E5-CDD97FD6D604}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorBusinessLogic", "CalculatorBusinessLogic\CalculatorBusinessLogic.csproj", "{BE04873F-588F-405B-84EF-BE3E70FE7275}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorCalculation", "CalculatorBusinessLogic\CalculatorCalculation.csproj", "{BE04873F-588F-405B-84EF-BE3E70FE7275}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorParsing", "CalculatorParsing\CalculatorParsing.csproj", "{F3CE85DD-03EB-43F6-81F3-5F046EDE6CE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParsingUnitTests", "ParsingUnitTests\ParsingUnitTests.csproj", "{8A86978A-A7E4-47A3-8A6B-AEA4DABC52BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicUnitTests", "CalculatorUnitTest\BusinessLogicUnitTests.csproj", "{98D817E5-831A-46E1-A565-885E0E02F063}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculationUnitTests", "CalculatorUnitTest\CalculationUnitTests.csproj", "{98D817E5-831A-46E1-A565-885E0E02F063}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{BE4B0B6F-9BC7-44CC-B7CB-7B337CC58B94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorConsole", "CalculatorConsole\CalculatorConsole.csproj", "{DCAEA729-4C57-45EF-8154-74EB5C4A1544}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLogic", "CalculatorLogic\CalculatorLogic.csproj", "{F6BBCF4B-DC20-44F2-8050-F750FCF23D3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{BE4B0B6F-9BC7-44CC-B7CB-7B337CC58B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE4B0B6F-9BC7-44CC-B7CB-7B337CC58B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE4B0B6F-9BC7-44CC-B7CB-7B337CC58B94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCAEA729-4C57-45EF-8154-74EB5C4A1544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCAEA729-4C57-45EF-8154-74EB5C4A1544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCAEA729-4C57-45EF-8154-74EB5C4A1544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCAEA729-4C57-45EF-8154-74EB5C4A1544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6BBCF4B-DC20-44F2-8050-F750FCF23D3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6BBCF4B-DC20-44F2-8050-F750FCF23D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6BBCF4B-DC20-44F2-8050-F750FCF23D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6BBCF4B-DC20-44F2-8050-F750FCF23D3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

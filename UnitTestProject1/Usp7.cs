@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CalculatorBusinessLogic;
 using CalculatorBusinessLogic.Fakes;
+using CalculatorLogic;
 using CalculatorParsing;
 using CalculatorParsing.Fakes;
 using CalculatorUI;
@@ -19,14 +20,14 @@ namespace ParsingUnitTests
     {
         private StubIParsing parsingStub;
         private StubICalculation calculationStub;
-        private CalculatorViewModel testee;
+        private SequenceLogic testee;
 
         [TestInitialize]
         public void SetUp()
         {
             this.parsingStub = new StubIParsing();
             this.calculationStub = new StubICalculation();
-            this.testee = new CalculatorViewModel(this.parsingStub, calculationStub);
+            this.testee = new SequenceLogic(this.parsingStub, calculationStub);
         }
 
         [TestMethod]
@@ -40,10 +41,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "1.57 * 2";
-            string errorMessage = testee.StartCalculation();
+            testee.Calculate();
 
             // Assert
-            errorMessage.Should().Contain(testee.UserInput);
+            testee.Result.Should().Contain(testee.UserInput);
         }
     }
 }

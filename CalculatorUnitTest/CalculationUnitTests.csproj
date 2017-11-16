@@ -63,9 +63,9 @@
     <Compile Include="Usp2.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CalculatorBusinessLogic\CalculatorBusinessLogic.csproj">
+    <ProjectReference Include="..\CalculatorBusinessLogic\CalculatorCalculation.csproj">
       <Project>{be04873f-588f-405b-84ef-be3e70fe7275}</Project>
-      <Name>CalculatorBusinessLogic</Name>
+      <Name>CalculatorCalculation</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

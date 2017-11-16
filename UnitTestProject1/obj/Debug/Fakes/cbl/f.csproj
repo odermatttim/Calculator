@@ -8,7 +8,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
-    <ProjectGuid>7e35c953-3bb5-43af-95fe-282805eb876d</ProjectGuid>
+    <ProjectGuid>dfd79293-5fe7-46f4-be7b-2694f99bce5f</ProjectGuid>
     <!-- update GUID here -->
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -57,6 +57,10 @@
     </Reference>
     <Reference Include="Calculator">
       <HintPath>\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\Calculator\bin\Debug\Calculator.exe</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CalculatorLogic">
+      <HintPath>\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorLogic\bin\Debug\CalculatorLogic.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="CalculatorParsing">

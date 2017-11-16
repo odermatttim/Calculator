@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CalculatorLogic.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:CalculatorLogic.Fakes.ShimSequenceLogic">
+            <summary>Shim type of CalculatorLogic.SequenceLogic</summary>
+        </member>
+        <member name="M:CalculatorLogic.Fakes.ShimSequenceLogic.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:CalculatorLogic.Fakes.ShimSequenceLogic.#ctor(CalculatorLogic.SequenceLogic)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:CalculatorLogic.Fakes.ShimSequenceLogic.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CalculatorLogic.Fakes.ShimSequenceLogic.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:CalculatorLogic.Fakes.ShimSequenceLogic.Bind(CalculatorLogic.ISequenceLogic)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.ConstructorStringIParsingICalculation">
+            <summary>Sets the shim of SequenceLogic.SequenceLogic(String userInput, IParsing parsing, ICalculation calculation)</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.ErrorMessagesGet">
+            <summary>Sets the shim of SequenceLogic.get_ErrorMessages()</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.GetErrorMessageString">
+            <summary>Sets the shim of SequenceLogic.GetErrorMessage(String specificMessage)</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.ResultGet">
+            <summary>Sets the shim of SequenceLogic.get_Result()</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.ResultSetString">
+            <summary>Sets the shim of SequenceLogic.set_Result(String value)</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.StartCalculation">
+            <summary>Sets the shim of SequenceLogic.StartCalculation()</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.UserInputGet">
+            <summary>Sets the shim of SequenceLogic.get_UserInput()</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.UserInputSetString">
+            <summary>Sets the shim of SequenceLogic.set_UserInput(String value)</summary>
+        </member>
+        <member name="T:CalculatorLogic.Fakes.ShimSequenceLogic.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.AllInstances.ErrorMessagesGet">
+            <summary>Sets the shim of SequenceLogic.get_ErrorMessages()</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.AllInstances.GetErrorMessageString">
+            <summary>Sets the shim of SequenceLogic.GetErrorMessage(String specificMessage)</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.AllInstances.ResultGet">
+            <summary>Sets the shim of SequenceLogic.get_Result()</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.AllInstances.ResultSetString">
+            <summary>Sets the shim of SequenceLogic.set_Result(String value)</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.AllInstances.StartCalculation">
+            <summary>Sets the shim of SequenceLogic.StartCalculation()</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.AllInstances.UserInputGet">
+            <summary>Sets the shim of SequenceLogic.get_UserInput()</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.ShimSequenceLogic.AllInstances.UserInputSetString">
+            <summary>Sets the shim of SequenceLogic.set_UserInput(String value)</summary>
+        </member>
+        <member name="T:CalculatorLogic.Fakes.StubISequenceLogic">
+            <summary>Stub type of CalculatorLogic.ISequenceLogic</summary>
+        </member>
+        <member name="M:CalculatorLogic.Fakes.StubISequenceLogic.#ctor">
+            <summary>Initializes a new instance of type StubISequenceLogic</summary>
+        </member>
+        <member name="M:CalculatorLogic.Fakes.StubISequenceLogic.cl::CalculatorLogic#ISequenceLogic#GetErrorMessage(System.String)">
+            <summary>Sets the stub of ISequenceLogic.GetErrorMessage(String specificMessage)</summary>
+        </member>
+        <member name="M:CalculatorLogic.Fakes.StubISequenceLogic.cl::CalculatorLogic#ISequenceLogic#StartCalculation">
+            <summary>Sets the stub of ISequenceLogic.StartCalculation()</summary>
+        </member>
+        <member name="F:CalculatorLogic.Fakes.StubISequenceLogic.ErrorMessagesGet">
+            <summary>Sets the stub of ISequenceLogic.get_ErrorMessages()</summary>
+        </member>
+        <member name="F:CalculatorLogic.Fakes.StubISequenceLogic.GetErrorMessageString">
+            <summary>Sets the stub of ISequenceLogic.GetErrorMessage(String specificMessage)</summary>
+        </member>
+        <member name="F:CalculatorLogic.Fakes.StubISequenceLogic.StartCalculation">
+            <summary>Sets the stub of ISequenceLogic.StartCalculation()</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.StubISequenceLogic.cl::CalculatorLogic#ISequenceLogic#ErrorMessages">
+            <summary>Sets the stub of ISequenceLogic.get_ErrorMessages()</summary>
+        </member>
+        <member name="T:CalculatorLogic.Fakes.StubSequenceLogic">
+            <summary>Stub type of CalculatorLogic.SequenceLogic</summary>
+        </member>
+        <member name="M:CalculatorLogic.Fakes.StubSequenceLogic.#ctor(System.String,CalculatorParsing.IParsing,CalculatorBusinessLogic.ICalculation)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:CalculatorLogic.Fakes.StubSequenceLogic.InitializeStub">
+            <summary>Initializes a new instance of type StubSequenceLogic</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.StubSequenceLogic.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.StubSequenceLogic.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:CalculatorLogic.Fakes.StubSequenceLogic.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>
