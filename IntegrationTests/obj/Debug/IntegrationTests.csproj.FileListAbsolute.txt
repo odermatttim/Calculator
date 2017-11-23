@@ -17,3 +17,22 @@
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\IntegrationTests\bin\Debug\FluentAssertions.Core.xml
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\IntegrationTests\obj\Debug\IntegrationTests.dll
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\IntegrationTests\obj\Debug\IntegrationTests.pdb
+C:\Work\Calculator\IntegrationTests\bin\Debug\IntegrationTests.dll
+C:\Work\Calculator\IntegrationTests\bin\Debug\IntegrationTests.pdb
+C:\Work\Calculator\IntegrationTests\bin\Debug\Calculator.exe
+C:\Work\Calculator\IntegrationTests\bin\Debug\CalculatorBusinessLogic.dll
+C:\Work\Calculator\IntegrationTests\bin\Debug\CalculatorLogic.dll
+C:\Work\Calculator\IntegrationTests\bin\Debug\CalculatorParsing.dll
+C:\Work\Calculator\IntegrationTests\bin\Debug\FluentAssertions.Core.dll
+C:\Work\Calculator\IntegrationTests\bin\Debug\FluentAssertions.dll
+C:\Work\Calculator\IntegrationTests\bin\Debug\CalculatorBusinessLogic.pdb
+C:\Work\Calculator\IntegrationTests\bin\Debug\CalculatorLogic.pdb
+C:\Work\Calculator\IntegrationTests\bin\Debug\CalculatorParsing.pdb
+C:\Work\Calculator\IntegrationTests\bin\Debug\Calculator.pdb
+C:\Work\Calculator\IntegrationTests\bin\Debug\FluentAssertions.pdb
+C:\Work\Calculator\IntegrationTests\bin\Debug\FluentAssertions.xml
+C:\Work\Calculator\IntegrationTests\bin\Debug\FluentAssertions.Core.pdb
+C:\Work\Calculator\IntegrationTests\bin\Debug\FluentAssertions.Core.xml
+C:\Work\Calculator\IntegrationTests\obj\Debug\IntegrationTests.csprojResolveAssemblyReference.cache
+C:\Work\Calculator\IntegrationTests\obj\Debug\IntegrationTests.dll
+C:\Work\Calculator\IntegrationTests\obj\Debug\IntegrationTests.pdb

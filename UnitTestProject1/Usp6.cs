@@ -23,10 +23,11 @@ namespace ParsingUnitTests
     {
         private StubIParsing parsingStub;
         private StubICalculation calculationStub;
-        private SequenceLogic testee;
+        private CalculatorViewModel testee;
         private Collection<double> operandsCollection;
         private Collection<char> operatorsCollection;
         private string expectedResult;
+        private string result;
         private const int irrelevantCalculationResult = 0;
 
         [TestInitialize]
@@ -34,7 +35,7 @@ namespace ParsingUnitTests
         {
             this.parsingStub = new StubIParsing();
             this.calculationStub = new StubICalculation();
-            this.testee = new SequenceLogic(this.parsingStub, calculationStub);
+            this.testee = new CalculatorViewModel(this.parsingStub, calculationStub);
         }
 
         [TestMethod]
@@ -51,11 +52,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "1 + 2";
-            testee.Calculate();
+            result = testee.StartCalculation();
 
             // Assert
-            testee.Result.Should().Be(expectedResult);
-
+            result.Should().Be(expectedResult);
         }
 
         [TestMethod]
@@ -72,10 +72,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "2 - 3.5";
-            testee.Calculate();
+            result = testee.StartCalculation();
 
             // Assert
-            testee.Result.Should().Be(expectedResult);
+            result.Should().Be(expectedResult);
         }
 
         [TestMethod]
@@ -92,10 +92,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "1 - 4 * 2";
-            testee.Calculate();
+            testee.StartCalculation();
 
             // Assert
-            testee.Result.Should().Contain(expectedResult);
+            testee.ErrorMessage.Should().Contain(expectedResult);
         }
 
         [TestMethod]
@@ -112,10 +112,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "1 3";
-            testee.Calculate();
+            testee.StartCalculation();
 
             // Assert
-            testee.Result.Should().Contain(expectedResult);
+            testee.ErrorMessage.Should().Contain(expectedResult);
         }
     }
 }

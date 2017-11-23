@@ -13,14 +13,12 @@ namespace CalculatorLogic
 {
     public interface ISequenceLogic
     {
-        string UserInput { get; set; }
+        string Calculate(string input);
 
-        string Result { get; set; }
+        event SequenceLogic.DgIllegalInput EvIllegalInputGivenIllegalOperator;
 
-        Collection<string> ErrorMessages { get; }
+        event SequenceLogic.DgIllegalInput EvIllegalInputGivenNotEnoughOperands;
 
-        void Calculate();
-
-        string GetErrorMessage(string specificMessage);
+        event SequenceLogic.DgIllegalInput EvIllegalInputGivenIllegalOperand;
     }
 }

@@ -13,59 +13,45 @@ namespace CalculatorLogic
 {
     public class SequenceLogic : ISequenceLogic
     {
-        public string UserInput { get; set; }
-        public string Result { get; set; }
         private readonly IParsing parsing;
         private readonly ICalculation calculation;
         private Collection<char> operatorsCollection;
         private Collection<double> operandsCollection;
-        private readonly Collection<string> errorMessages = new Collection<string>()
-        {
-            "Operators \"*\" and \"/\" are not allowed. \nPlease only use numbers and operators \"-\" or \"+\" for your input.",
-            "Use at least one operator \"-\" or \"+\" and two numbers.",
-            "One or multiple operands have an illegal value and/or you haven't put an operator between every two operands. \nPlease only use numbers and operators \"-\" or \"+\" for your input."
-        };
-        public Collection<string> ErrorMessages
-        {
-            get { return this.errorMessages; }
-        }
 
-        public SequenceLogic(IParsing parsing, ICalculation calculation, string userInput = "")
+        public delegate void DgIllegalInput();
+        public event DgIllegalInput EvIllegalInputGivenIllegalOperator;
+        public event DgIllegalInput EvIllegalInputGivenNotEnoughOperands;
+        public event DgIllegalInput EvIllegalInputGivenIllegalOperand;
+        
+        public SequenceLogic(IParsing parsing, ICalculation calculation)
         {
             this.parsing = parsing;
             this.calculation = calculation;
-            this.UserInput = userInput;
         }
 
-        public void Calculate()
+        public string Calculate(string input)
         {
-            this.operatorsCollection = this.parsing.ReadOperatorsOutOfInput(this.UserInput);
-            if (this.UserInput.Contains("*") || this.UserInput.Contains(":") || this.UserInput.Contains("/"))
+            this.operatorsCollection = this.parsing.ReadOperatorsOutOfInput(input);
+            if (input.Contains("*") || input.Contains(":") || input.Contains("/"))
             {
-                this.Result = this.GetErrorMessage(this.ErrorMessages[0]);
-                return;
+                EvIllegalInputGivenIllegalOperator();
+                return null;
             }
             try
             {
-                this.operandsCollection = this.parsing.SplitInputIntoOperands(this.UserInput);
+                this.operandsCollection = this.parsing.SplitInputIntoOperands(input);
             }
             catch (Exception)
             {
-                this.Result = this.GetErrorMessage(this.ErrorMessages[2]);
-                return;
+                EvIllegalInputGivenIllegalOperand();
+                return null;
             }
             if (this.operatorsCollection.Count == 0 || this.operandsCollection.Count <= 1)
             {
-                this.Result = this.GetErrorMessage(this.ErrorMessages[1]);
-                return;
+                EvIllegalInputGivenNotEnoughOperands();
+                return null;
             }
-            this.Result = Convert.ToString(this.calculation.Calculate(this.operandsCollection, this.operatorsCollection));
-        }
-
-        public string GetErrorMessage(string specificMessage)
-        {
-            string errorMessage = string.Format(CultureInfo.CurrentCulture, "Your Input: \"{0}\" has a wrong format.\n{1}", this.UserInput, specificMessage);
-            return errorMessage;
+            return Convert.ToString(this.calculation.Calculate(this.operandsCollection, this.operatorsCollection));
         }
     }
 }

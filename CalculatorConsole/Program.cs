@@ -22,13 +22,31 @@ namespace CalculatorConsole
 
         private static void Main(string[] args)
         {
+            sequenceLogic.EvIllegalInputGivenIllegalOperator += new SequenceLogic.DgIllegalInput(WriteMessageIllegalOperator);
+            sequenceLogic.EvIllegalInputGivenNotEnoughOperands += new SequenceLogic.DgIllegalInput(WriteMessageNotEnoughOperands);
+            sequenceLogic.EvIllegalInputGivenIllegalOperand += new SequenceLogic.DgIllegalInput(WriteMessageIllegalOperand);
             while (true)
             {
                 Console.WriteLine("Type your calculation: ");
-                sequenceLogic.UserInput = Console.ReadLine();
-                sequenceLogic.Calculate();
-                Console.WriteLine(sequenceLogic.Result + "\n");
+                string userInput = Console.ReadLine();
+                string result = sequenceLogic.Calculate(userInput);
+                Console.WriteLine(result + "\n");
             }
+        }
+
+        private static void WriteMessageIllegalOperator()
+        {
+            Console.WriteLine("Error occured. Only \"+\", \"-\" and numbers are allowed");
+        }
+
+        private static void WriteMessageNotEnoughOperands()
+        {
+            Console.WriteLine("Error occured. Use at least \"+\" or \"-\" and two numbers.");
+        }
+
+        private static void WriteMessageIllegalOperand()
+        {
+            Console.WriteLine("Error occured. One or multiple operands have an illegal value.");
         }
     }
 }

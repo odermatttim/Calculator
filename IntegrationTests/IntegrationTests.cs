@@ -15,9 +15,10 @@ namespace IntegrationTests
     [TestClass]
     public class IntegrationTests
     {
+        private CalculatorViewModel testee;
         private Calculation calculation;
         private Parsing parsing;
-        private SequenceLogic testee;
+        private string result;
         private string expectedResult;
 
         [TestInitialize]
@@ -25,7 +26,7 @@ namespace IntegrationTests
         {
             this.parsing = new Parsing();
             this.calculation = new Calculation();
-            this.testee = new SequenceLogic(this.parsing, this.calculation);
+            this.testee = new CalculatorViewModel(this.parsing, this.calculation);
         }
 
         [TestMethod]
@@ -34,9 +35,9 @@ namespace IntegrationTests
             expectedResult = "3";
             //Act
             testee.UserInput = "1 + 2";
-            testee.Calculate();
+            result = testee.StartCalculation();
             //Assert
-            testee.Result.Should().Be(expectedResult);
+            result.Should().Be(expectedResult);
         }
 
         [TestMethod]
@@ -45,9 +46,9 @@ namespace IntegrationTests
             expectedResult = "-2053.7578";
             //Act
             testee.UserInput = "4.31 - 30.068 + 0.0002 - 2028";
-            testee.Calculate();
+            result = testee.StartCalculation();
             //Assert
-            testee.Result.Should().Be(expectedResult);
+            result.Should().Be(expectedResult);
         }
 
         [TestMethod]
@@ -56,9 +57,9 @@ namespace IntegrationTests
             expectedResult = testee.ErrorMessages[0];
             //Act
             testee.UserInput = "1 * 2";
-            testee.Calculate();
+            testee.StartCalculation();
             //Assert
-            testee.Result.Should().Contain(expectedResult);
+            testee.ErrorMessage.Should().Contain(expectedResult);
         }
 
         [TestMethod]
@@ -67,9 +68,9 @@ namespace IntegrationTests
             expectedResult = testee.ErrorMessages[1];
             //Act
             testee.UserInput = "1 2";
-            testee.Calculate();
+            testee.StartCalculation();
             //Assert
-            testee.Result.Should().Contain(expectedResult);
+            testee.ErrorMessage.Should().Contain(expectedResult);
         }
 
         [TestMethod]
@@ -78,9 +79,9 @@ namespace IntegrationTests
             expectedResult = testee.ErrorMessages[2];
             //Act
             testee.UserInput = "4.31 - 30.068 + 0.0002 2028";
-            testee.Calculate();
+            testee.StartCalculation();
             //Assert
-            testee.Result.Should().Contain(expectedResult);
+            testee.ErrorMessage.Should().Contain(expectedResult);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,14 +21,14 @@ namespace ParsingUnitTests
     {
         private StubIParsing parsingStub;
         private StubICalculation calculationStub;
-        private SequenceLogic testee;
+        private CalculatorViewModel testee;
 
         [TestInitialize]
         public void SetUp()
         {
             this.parsingStub = new StubIParsing();
             this.calculationStub = new StubICalculation();
-            this.testee = new SequenceLogic(this.parsingStub, calculationStub);
+            this.testee = new CalculatorViewModel(this.parsingStub, calculationStub);
         }
 
         [TestMethod]
@@ -41,10 +42,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "1.57 * 2";
-            testee.Calculate();
+            testee.StartCalculation();
 
             // Assert
-            testee.Result.Should().Contain(testee.UserInput);
+            testee.ErrorMessage.Should().Contain(testee.UserInput);
         }
     }
 }

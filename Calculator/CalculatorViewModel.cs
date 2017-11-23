@@ -17,21 +17,54 @@ namespace CalculatorUI
     public class CalculatorViewModel
     {
         public string UserInput { get; set; }
-        private readonly ISequenceLogic sequenceLogic;
+        public string ErrorMessage { get; set; }
+        private static ISequenceLogic sequenceLogic;
+        private static readonly Collection<string> errorMessages = new Collection<string>()
+        {
+            "Operators \"*\" and \"/\" are not allowed. \nPlease only use numbers and operators \"-\" or \"+\" for your input.",
+            "Use at least one operator \"-\" or \"+\" and two numbers for your input.",
+            "One or multiple operands have an illegal value and/or you haven't put an operator between every two operands. \nPlease only use numbers and operators \"-\" or \"+\" for your input."
+        };
+
+        public Collection<string> ErrorMessages
+        {
+            get { return errorMessages; }
+        }
 
         public CalculatorViewModel(IParsing parsing, ICalculation calculation)
         {
-            sequenceLogic = new SequenceLogic(parsing, calculation, UserInput);
+            sequenceLogic = new SequenceLogic(parsing, calculation);
+            sequenceLogic.EvIllegalInputGivenIllegalOperator += new SequenceLogic.DgIllegalInput(WriteMessageIllegalOperator);
+            sequenceLogic.EvIllegalInputGivenNotEnoughOperands += new SequenceLogic.DgIllegalInput(WriteMessageNotEnoughOperands);
+            sequenceLogic.EvIllegalInputGivenIllegalOperand += new SequenceLogic.DgIllegalInput(WriteMessageIllegalOperand);
         }
 
         public string StartCalculation()
         {
-            sequenceLogic.Calculate();
-            if (sequenceLogic.Result.StartsWith("Your Input:"))
-            {
-                MessageBox.Show(sequenceLogic.Result, "Error", MessageBoxButton.OK);
-            }
-            return sequenceLogic.Result;
+            string result = sequenceLogic.Calculate(UserInput);
+            return result;
+        }
+
+        private void WriteMessageIllegalOperator()
+        {
+            ErrorMessage = ShowErrorMessageBox(errorMessages[0]);
+        }
+
+        private void WriteMessageNotEnoughOperands()
+        {
+            ErrorMessage = ShowErrorMessageBox(errorMessages[1]);
+        }
+
+        private void WriteMessageIllegalOperand()
+        {
+            ErrorMessage = ShowErrorMessageBox(errorMessages[2]);
+        }
+
+        public string ShowErrorMessageBox(string specificMessage)
+        {
+            string completeMessage = string.Format(CultureInfo.CurrentCulture, "Your Input: \"{0}\" has a wrong format.\n{1}", UserInput, specificMessage);
+            MessageBox.Show(string.Format(completeMessage, "Error", MessageBoxButton.OK));
+            return completeMessage;
         }
     }
 }

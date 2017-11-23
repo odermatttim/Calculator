@@ -10,3 +10,6 @@
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorConsole\obj\Debug\CalculatorConsole.csprojResolveAssemblyReference.cache
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorConsole\obj\Debug\CalculatorConsole.exe
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorConsole\obj\Debug\CalculatorConsole.pdb
+C:\Work\Calculator\CalculatorConsole\bin\Debug\CalculatorConsole.exe.config
+C:\Work\Calculator\CalculatorConsole\obj\Debug\CalculatorConsole.exe
+C:\Work\Calculator\CalculatorConsole\obj\Debug\CalculatorConsole.pdb

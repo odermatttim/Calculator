@@ -20,7 +20,7 @@ namespace ParsingUnitTests
     {
         private StubIParsing parsingStub;
         private StubICalculation calculationStub;
-        private SequenceLogic testee;
+        private CalculatorViewModel testee;
         private string expectedErrorMessage;
         private const int irrelevantCalculationResult = 0;
         
@@ -29,7 +29,7 @@ namespace ParsingUnitTests
         {
             this.parsingStub = new StubIParsing();
             this.calculationStub = new StubICalculation();
-            this.testee = new SequenceLogic(this.parsingStub, this.calculationStub);
+            this.testee = new CalculatorViewModel(this.parsingStub, this.calculationStub);
         }
 
         [TestMethod]
@@ -43,10 +43,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "1.5 * 2";
-            testee.Calculate();
+            testee.StartCalculation();
 
             // Assert
-            testee.Result.Should().Contain(expectedErrorMessage);
+            testee.ErrorMessage.Should().Contain(expectedErrorMessage);
         }
 
         [TestMethod]
@@ -60,10 +60,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "1.5 +";
-            testee.Calculate();
+            testee.StartCalculation();
 
             // Assert
-            testee.Result.Should().Contain(expectedErrorMessage);
+            testee.ErrorMessage.Should().Contain(expectedErrorMessage);
         }
     }
 }

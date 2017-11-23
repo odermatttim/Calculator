@@ -23,18 +23,19 @@ namespace ParsingUnitTests
     {
         private StubIParsing parsingStub;
         private StubICalculation calculationStub;
-        private ISequenceLogic testee;
+        private CalculatorViewModel testee;
         private Collection<double> operandsCollection;
         private Collection<char> operatorsCollection;
         private int irrelevantCalculationResult;
         private string expectedResult;
+        private string result;
             
         [TestInitialize]
         public void SetUp()
         {
             this.parsingStub = new StubIParsing();
             this.calculationStub = new StubICalculation();
-            testee = new SequenceLogic(parsingStub, calculationStub);
+            testee = new CalculatorViewModel(parsingStub, calculationStub);
             irrelevantCalculationResult = 0;
         }
 
@@ -52,10 +53,10 @@ namespace ParsingUnitTests
             
             // Act
             testee.UserInput = "3.5 + 6.5";
-            testee.Calculate();
+            result = testee.StartCalculation();
 
             // Assert
-            testee.Result.Should().Be(expectedResult);
+            result.Should().Be(expectedResult);
         }
 
         [TestMethod]
@@ -72,10 +73,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "2+6.43-3";
-            testee.Calculate();
+            result = testee.StartCalculation();
 
             // Assert
-            testee.Result.Should().Be(expectedResult);
+            result.Should().Be(expectedResult);
         }
 
         [TestMethod]
@@ -92,10 +93,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "4.395 6";
-            testee.Calculate();
+            testee.StartCalculation();
 
             // Assert
-            testee.Result.Should().Contain(expectedResult);
+            testee.ErrorMessage.Should().Contain(expectedResult);
         }
 
         [TestMethod]
@@ -112,10 +113,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "4.395 +";
-            testee.Calculate();
+            testee.StartCalculation();
 
             // Assert
-            testee.Result.Should().Contain(expectedResult);
+            testee.ErrorMessage.Should().Contain(expectedResult);
         }
 
         [TestMethod]
@@ -132,10 +133,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "- +";
-            testee.Calculate();
+            testee.StartCalculation();
 
             // Assert
-            testee.Result.Should().Contain(expectedResult);
+            testee.ErrorMessage.Should().Contain(expectedResult);
         }
 
         [TestMethod]
@@ -152,10 +153,10 @@ namespace ParsingUnitTests
 
             // Act
             testee.UserInput = "4.395 * 6";
-            testee.Calculate();
+            testee.StartCalculation();
 
             // Assert
-            testee.Result.Should().Contain(expectedResult);
+            testee.ErrorMessage.Should().Contain(expectedResult);
         }
     }
 }

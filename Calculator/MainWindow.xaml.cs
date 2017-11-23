@@ -36,7 +36,7 @@ namespace CalculatorUI
         private void CalculateButton_Click(object sender, RoutedEventArgs e)
         {
             string result = this.viewModel.StartCalculation();
-            if (!result.StartsWith("Your Input:"))
+            if (!string.IsNullOrEmpty(result))
             {
                 OutputTextBlock.Text = result;
                 return;
