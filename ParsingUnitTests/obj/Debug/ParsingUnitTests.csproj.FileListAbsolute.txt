@@ -11,3 +11,16 @@
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\ParsingUnitTests\obj\Debug\ParsingUnitTests.csprojResolveAssemblyReference.cache
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\ParsingUnitTests\obj\Debug\ParsingUnitTests.dll
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\ParsingUnitTests\obj\Debug\ParsingUnitTests.pdb
+C:\Work\Calculator\ParsingUnitTests\bin\Debug\ParsingUnitTests.dll
+C:\Work\Calculator\ParsingUnitTests\bin\Debug\ParsingUnitTests.pdb
+C:\Work\Calculator\ParsingUnitTests\bin\Debug\CalculatorParsing.dll
+C:\Work\Calculator\ParsingUnitTests\bin\Debug\FluentAssertions.Core.dll
+C:\Work\Calculator\ParsingUnitTests\bin\Debug\FluentAssertions.dll
+C:\Work\Calculator\ParsingUnitTests\bin\Debug\CalculatorParsing.pdb
+C:\Work\Calculator\ParsingUnitTests\bin\Debug\FluentAssertions.pdb
+C:\Work\Calculator\ParsingUnitTests\bin\Debug\FluentAssertions.xml
+C:\Work\Calculator\ParsingUnitTests\bin\Debug\FluentAssertions.Core.pdb
+C:\Work\Calculator\ParsingUnitTests\bin\Debug\FluentAssertions.Core.xml
+C:\Work\Calculator\ParsingUnitTests\obj\Debug\ParsingUnitTests.csprojResolveAssemblyReference.cache
+C:\Work\Calculator\ParsingUnitTests\obj\Debug\ParsingUnitTests.dll
+C:\Work\Calculator\ParsingUnitTests\obj\Debug\ParsingUnitTests.pdb

@@ -40,7 +40,7 @@ namespace ParsingUnitTests
         }
 
         [TestMethod]
-        public void OptionOneValid()
+        public void ValidInput_NoInvalidCharacters()
         {
             operandsCollection = new Collection<double>{3.5, 6.5};
             operatorsCollection = new Collection<char>{'+'};
@@ -60,31 +60,11 @@ namespace ParsingUnitTests
         }
 
         [TestMethod]
-        public void OptionTwoValid()
-        {
-            operandsCollection = new Collection<double>{2, 6.43, 3};
-            operatorsCollection = new Collection<char>{'+', '-'};
-            expectedResult = "5.43";
-
-            // Arrange
-            this.parsingStub.SplitInputIntoOperandsString = (userInput) => operandsCollection;
-            this.parsingStub.ReadOperatorsOutOfInputString = (userInput) => operatorsCollection;
-            this.calculationStub.CalculateCollectionOfDoubleCollectionOfChar = (doubleValues, charValues) => double.Parse(expectedResult);
-
-            // Act
-            testee.UserInput = "2+6.43-3";
-            result = testee.StartCalculation();
-
-            // Assert
-            result.Should().Be(expectedResult);
-        }
-
-        [TestMethod]
-        public void OptionOneInvalid()
+        public void InvalidInput_NoOperator()
         {
             operandsCollection = new Collection<double>{4.395, 6};
             operatorsCollection = new Collection<char>();
-            expectedResult = testee.ErrorMessages[1];
+            expectedResult = testee.ErrorMessages[0];
 
             // Arrange
             this.parsingStub.SplitInputIntoOperandsString = (userInput) => operandsCollection;
@@ -100,11 +80,11 @@ namespace ParsingUnitTests
         }
 
         [TestMethod]
-        public void OptionTwoInvalid()
+        public void InvalidInput_OneOperand()
         {
             operandsCollection = new Collection<double> { 4.395 };
             operatorsCollection = new Collection<char> { '+' };
-            expectedResult = testee.ErrorMessages[1];
+            expectedResult = testee.ErrorMessages[0];
 
             // Arrange
             this.parsingStub.SplitInputIntoOperandsString = (userInput) => operandsCollection;
@@ -120,30 +100,10 @@ namespace ParsingUnitTests
         }
 
         [TestMethod]
-        public void OptionThreeInvalid()
+        public void InvalidInput_NoOperand()
         {
             operandsCollection = new Collection<double>();
             operatorsCollection = new Collection<char> { '-', '+' };
-            expectedResult = testee.ErrorMessages[1];
-
-            // Arrange
-            this.parsingStub.SplitInputIntoOperandsString = (userInput) => operandsCollection;
-            this.parsingStub.ReadOperatorsOutOfInputString = (userInput) => operatorsCollection;
-            this.calculationStub.CalculateCollectionOfDoubleCollectionOfChar = (doubleValues, charValues) => irrelevantCalculationResult;
-
-            // Act
-            testee.UserInput = "- +";
-            testee.StartCalculation();
-
-            // Assert
-            testee.ErrorMessage.Should().Contain(expectedResult);
-        }
-
-        [TestMethod]
-        public void OptionFourInvalid()
-        {
-            operandsCollection = new Collection<double> { 4.395, 6 };
-            operatorsCollection = new Collection<char>{'*'};
             expectedResult = testee.ErrorMessages[0];
 
             // Arrange
@@ -152,7 +112,7 @@ namespace ParsingUnitTests
             this.calculationStub.CalculateCollectionOfDoubleCollectionOfChar = (doubleValues, charValues) => irrelevantCalculationResult;
 
             // Act
-            testee.UserInput = "4.395 * 6";
+            testee.UserInput = "- +";
             testee.StartCalculation();
 
             // Assert

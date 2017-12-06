@@ -1,26 +1,26 @@
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorBusinessLogic.Fakes.xml
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorBusinessLogic.Fakes.dll
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorBusinessLogic.Fakes.pdb
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Calculator.exe
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorBusinessLogic.dll
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorLogic.dll
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorParsing.dll
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Castle.Core.dll
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\FluentAssertions.Core.dll
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\FluentAssertions.dll
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Microsoft.QualityTools.Testing.Fakes.dll
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Moq.dll
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorBusinessLogic.pdb
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Calculator.pdb
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorLogic.pdb
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorParsing.pdb
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Castle.Core.xml
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\FluentAssertions.Core.pdb
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\FluentAssertions.Core.xml
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\FluentAssertions.pdb
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\FluentAssertions.xml
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Moq.pdb
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Moq.xml
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\o\f.csprojResolveAssemblyReference.cache
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\o\CalculatorBusinessLogic.Fakes.dll
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\o\CalculatorBusinessLogic.Fakes.pdb
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorBusinessLogic.Fakes.xml
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorBusinessLogic.Fakes.dll
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorBusinessLogic.Fakes.pdb
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Calculator.exe
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorBusinessLogic.dll
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorLogic.dll
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorParsing.dll
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Castle.Core.dll
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\FluentAssertions.Core.dll
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\FluentAssertions.dll
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Moq.dll
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorBusinessLogic.pdb
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Calculator.pdb
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorLogic.pdb
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\CalculatorParsing.pdb
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Castle.Core.xml
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\FluentAssertions.Core.pdb
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\FluentAssertions.Core.xml
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\FluentAssertions.pdb
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\FluentAssertions.xml
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Moq.pdb
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\b\Moq.xml
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\o\f.csprojResolveAssemblyReference.cache
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\o\CalculatorBusinessLogic.Fakes.dll
+C:\Work\Calculator\UnitTestProject1\obj\Debug\Fakes\cbl\o\CalculatorBusinessLogic.Fakes.pdb

@@ -36,7 +36,7 @@ namespace ParsingUnitTests
         }
 
         [TestMethod]
-        public void OptionOneValid()
+        public void ValidInput_TwoOperandsOneOperator()
         {
             operandsCollection = new Collection<double>{4.395, 6};
             operatorsCollection = new Collection<char>{'+'};
@@ -56,7 +56,7 @@ namespace ParsingUnitTests
         }
 
         [TestMethod]
-        public void OptionTwoValid()
+        public void ValidInput_ThreeOperandsTwoOperators()
         {
             operandsCollection = new Collection<double>{2, 6.43, 3};
             operatorsCollection = new Collection<char>{'+', '-'};
@@ -76,11 +76,11 @@ namespace ParsingUnitTests
         }
 
         [TestMethod]
-        public void OptionOneInvalid()
+        public void InvalidInput_NoOperator()
         {
             operandsCollection = new Collection<double> { 4.395, 6 };
             operatorsCollection = new Collection<char>();
-            expectedResult = testee.ErrorMessages[1];
+            expectedResult = testee.ErrorMessages[0];
 
             // Arrange
             this.parsingStub.SplitInputIntoOperandsString = (userInput) => operandsCollection;
@@ -96,11 +96,11 @@ namespace ParsingUnitTests
         }
 
         [TestMethod]
-        public void OptionTwoInvalid()
+        public void InvalidInput_OneOperand()
         {
             operandsCollection = new Collection<double> { 4.395 };
             operatorsCollection = new Collection<char> { '+' };
-            expectedResult = testee.ErrorMessages[1];
+            expectedResult = testee.ErrorMessages[0];
 
             // Arrange
             this.parsingStub.SplitInputIntoOperandsString = (userInput) => operandsCollection;
@@ -116,11 +116,11 @@ namespace ParsingUnitTests
         }
 
         [TestMethod]
-        public void OptionThreeInvalid()
+        public void InvalidInput_NoOperand()
         {
             operandsCollection = new Collection<double>();
             operatorsCollection = new Collection<char> { '-', '+' };
-            expectedResult = testee.ErrorMessages[1];
+            expectedResult = testee.ErrorMessages[0];
 
             // Arrange
             this.parsingStub.SplitInputIntoOperandsString = (userInput) => operandsCollection;

@@ -13,19 +13,19 @@ namespace ParsingUnitTests
     [TestClass]
     public class Usp1
     {
-        private Parsing parsing;
+        private Parsing testee;
 
         [TestInitialize]
         public void SetUp()
         {
-            parsing = new Parsing();
+            testee = new Parsing();
         }
 
         [TestMethod]
         public void SplitIntoOperands()
         {
             //Act
-            Collection<double> operands = parsing.SplitInputIntoOperands("1 + 2.48 - 44 - 20");
+            Collection<double> operands = testee.SplitInputIntoOperands("1 + 2.48 * 44 - 20");
             //Assert
             operands.Should().HaveCount(4);
         }
@@ -34,7 +34,7 @@ namespace ParsingUnitTests
         public void SplitIntoOperators()
         {
             //Act
-            Collection<char> valuesOperators = parsing.ReadOperatorsOutOfInput("1 + 2.48 - 44 - 20");
+            Collection<char> valuesOperators = testee.ReadOperatorsOutOfInput("1 / 2.48 - 44 - 20");
             //Assert
             valuesOperators.Should().HaveCount(3);
         }
@@ -44,7 +44,7 @@ namespace ParsingUnitTests
         {
             //Act
             String[] values = { "2.73", "3", "17" };
-            Collection<double> operands = parsing.SplitInputIntoOperands(String.Format("{0}+{1}-{2}", values[0], values[1], values[2]));
+            Collection<double> operands = testee.SplitInputIntoOperands(String.Format("{0}+{1}-{2}", values[0], values[1], values[2]));
             //Assert
             for (int i = 0; i < operands.Count; i++)
             {
@@ -57,7 +57,7 @@ namespace ParsingUnitTests
         {
             //Act
             string[] values = { "+", "-" };
-            Collection<char> operators = parsing.ReadOperatorsOutOfInput(String.Format("2.73{0}3{1}17", values[0], values[1]));
+            Collection<char> operators = testee.ReadOperatorsOutOfInput(String.Format("2.73{0}3{1}17", values[0], values[1]));
             //Assert
             for (int i = 0; i < operators.Count; i++)
             {

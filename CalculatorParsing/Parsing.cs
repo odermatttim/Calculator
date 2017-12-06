@@ -13,9 +13,9 @@ namespace CalculatorParsing
         public Collection<double> SplitInputIntoOperands(string userInput)
         {
             Collection<double> operandsCollection = new Collection<double>();
-            if (userInput.Contains("+") || userInput.Contains("-"))
+            if (userInput.Contains("+") || userInput.Contains("-") || userInput.Contains("*") || userInput.Contains("/"))
             {
-                char[] operators = { '+', '-' };
+                char[] operators = { '+', '-', '*', '/' };
                 string[] values = userInput.Split(operators);
                 foreach (string value in values)
                 {
@@ -31,12 +31,24 @@ namespace CalculatorParsing
             Collection<char> operatorsCollection = new Collection<char>();
             foreach (var v in userInput)
             {
-                if (v == '+' || v == '-')
+                if (v == '+' || v == '-' || v == '*' || v == '/')
                 {
                     operatorsCollection.Add(v);
                 }
             }
             return operatorsCollection;
+        }
+
+        public bool AmountOfOperandsAndOperatorsIsWrong(Collection<double> operandsCollection, Collection<char> operatorsCollection)
+        {
+            if (operatorsCollection.Count == 0 || operandsCollection.Count <= 1)
+            {
+                return false;
+            }
+            else
+            {
+                return true;   
+            }
         }
     }
 }

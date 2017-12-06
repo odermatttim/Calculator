@@ -12,5 +12,7 @@ namespace CalculatorParsing
         Collection<double> SplitInputIntoOperands(string userInput);
 
         Collection<char> ReadOperatorsOutOfInput(string userInput);
+
+        bool AmountOfOperandsAndOperatorsIsWrong(Collection<double> operandsCollection, Collection<char> operatorsCollection);
     }
 }

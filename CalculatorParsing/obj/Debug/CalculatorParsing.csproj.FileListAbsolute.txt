@@ -2,3 +2,8 @@
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorParsing\bin\Debug\CalculatorParsing.pdb
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorParsing\obj\Debug\CalculatorParsing.dll
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorParsing\obj\Debug\CalculatorParsing.pdb
+C:\Work\Calculator\CalculatorParsing\bin\Debug\CalculatorParsing.dll
+C:\Work\Calculator\CalculatorParsing\bin\Debug\CalculatorParsing.pdb
+C:\Work\Calculator\CalculatorParsing\obj\Debug\CalculatorParsing.csprojResolveAssemblyReference.cache
+C:\Work\Calculator\CalculatorParsing\obj\Debug\CalculatorParsing.dll
+C:\Work\Calculator\CalculatorParsing\obj\Debug\CalculatorParsing.pdb

@@ -19,3 +19,24 @@
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\Calculator\obj\Debug\CalculatorUI.csproj.GenerateResource.Cache
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\Calculator\obj\Debug\Calculator.exe
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Work\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Work\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Work\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Work\Calculator\Calculator\bin\Debug\Calculator.exe.CodeAnalysisLog.xml
+C:\Work\Calculator\Calculator\bin\Debug\Calculator.exe.lastcodeanalysissucceeded
+C:\Work\Calculator\Calculator\bin\Debug\CalculatorBusinessLogic.dll
+C:\Work\Calculator\Calculator\bin\Debug\CalculatorLogic.dll
+C:\Work\Calculator\Calculator\bin\Debug\CalculatorParsing.dll
+C:\Work\Calculator\Calculator\bin\Debug\CalculatorBusinessLogic.pdb
+C:\Work\Calculator\Calculator\bin\Debug\CalculatorLogic.pdb
+C:\Work\Calculator\Calculator\bin\Debug\CalculatorParsing.pdb
+C:\Work\Calculator\Calculator\obj\Debug\CalculatorUI.csprojResolveAssemblyReference.cache
+C:\Work\Calculator\Calculator\obj\Debug\MainWindow.baml
+C:\Work\Calculator\Calculator\obj\Debug\MainWindow.g.cs
+C:\Work\Calculator\Calculator\obj\Debug\App.g.cs
+C:\Work\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.cache
+C:\Work\Calculator\Calculator\obj\Debug\Calculator.g.resources
+C:\Work\Calculator\Calculator\obj\Debug\CalculatorUI.Properties.Resources.resources
+C:\Work\Calculator\Calculator\obj\Debug\CalculatorUI.csproj.GenerateResource.Cache
+C:\Work\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Work\Calculator\Calculator\obj\Debug\Calculator.pdb

@@ -36,12 +36,12 @@ namespace ParsingUnitTests
         {
             const int irrelevantCalculationResult = 0;
             // Arrange
-            this.parsingStub.SplitInputIntoOperandsString = (userInput) => new Collection<double> {4.395, 6};
-            this.parsingStub.ReadOperatorsOutOfInputString = (userInput) => new Collection<char> {'+'};
+            this.parsingStub.SplitInputIntoOperandsString = (userInput) => new Collection<double> {1.57, 2};
+            this.parsingStub.ReadOperatorsOutOfInputString = (userInput) => new Collection<char>();
             this.calculationStub.CalculateCollectionOfDoubleCollectionOfChar = (doubleValues, charValues) => irrelevantCalculationResult;
 
             // Act
-            testee.UserInput = "1.57 * 2";
+            testee.UserInput = "1.57 2";
             testee.StartCalculation();
 
             // Assert

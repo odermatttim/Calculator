@@ -1,1 +1,3 @@
-\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\UnitTestProject1\Fakes\CalculatorParsing.fakes : warning : Cannot generate shim for CalculatorParsing.IParsing: type is an interface.
+C:\Work\Calculator\UnitTestProject1\Fakes\CalculatorParsing.fakes : warning : Cannot generate stub for <PrivateImplementationDetails>{2354721B-E4A3-44F8-8C0B-01A1F64A8427}: type is not supported because of internal limitations.
+C:\Work\Calculator\UnitTestProject1\Fakes\CalculatorParsing.fakes : warning : Cannot generate shim for CalculatorParsing.IParsing: type is an interface.
+C:\Work\Calculator\UnitTestProject1\Fakes\CalculatorParsing.fakes : warning : Cannot generate shim for <PrivateImplementationDetails>{2354721B-E4A3-44F8-8C0B-01A1F64A8427}: type is not supported because of internal limitations.

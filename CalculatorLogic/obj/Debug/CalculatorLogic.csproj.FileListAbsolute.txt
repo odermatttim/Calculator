@@ -7,3 +7,12 @@
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorLogic\obj\Debug\CalculatorLogic.csprojResolveAssemblyReference.cache
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorLogic\obj\Debug\CalculatorLogic.dll
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorLogic\obj\Debug\CalculatorLogic.pdb
+C:\Work\Calculator\CalculatorLogic\bin\Debug\CalculatorLogic.dll
+C:\Work\Calculator\CalculatorLogic\bin\Debug\CalculatorLogic.pdb
+C:\Work\Calculator\CalculatorLogic\bin\Debug\CalculatorBusinessLogic.dll
+C:\Work\Calculator\CalculatorLogic\bin\Debug\CalculatorParsing.dll
+C:\Work\Calculator\CalculatorLogic\bin\Debug\CalculatorBusinessLogic.pdb
+C:\Work\Calculator\CalculatorLogic\bin\Debug\CalculatorParsing.pdb
+C:\Work\Calculator\CalculatorLogic\obj\Debug\CalculatorLogic.csprojResolveAssemblyReference.cache
+C:\Work\Calculator\CalculatorLogic\obj\Debug\CalculatorLogic.dll
+C:\Work\Calculator\CalculatorLogic\obj\Debug\CalculatorLogic.pdb

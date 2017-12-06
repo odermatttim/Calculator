@@ -39,7 +39,7 @@ namespace ParsingUnitTests
         }
 
         [TestMethod]
-        public void ShowNoMessageboxOne()
+        public void ValidInput_NoMessagebox()
         {
             operandsCollection = new Collection<double> {1, 2};
             operatorsCollection = new Collection<char> {'+'};
@@ -59,51 +59,11 @@ namespace ParsingUnitTests
         }
 
         [TestMethod]
-        public void ShowNoMessageboxTwo()
-        {
-            operandsCollection = new Collection<double>{2, 3.5};
-            operatorsCollection = new Collection<char>{'-'};
-            expectedResult = "-1.5";
-
-            // Arrange
-            this.parsingStub.SplitInputIntoOperandsString = (userInput) => operandsCollection;
-            this.parsingStub.ReadOperatorsOutOfInputString = (userInput) => operatorsCollection;
-            this.calculationStub.CalculateCollectionOfDoubleCollectionOfChar = (doubleValues, charValues) => double.Parse(expectedResult);
-
-            // Act
-            testee.UserInput = "2 - 3.5";
-            result = testee.StartCalculation();
-
-            // Assert
-            result.Should().Be(expectedResult);
-        }
-
-        [TestMethod]
-        public void ShowMessageboxOne()
-        {
-            operandsCollection = new Collection<double> { 1, 4, 2 };
-            operatorsCollection = new Collection<char> { '-', '*' };
-            expectedResult = testee.ErrorMessages[0];
-
-            // Arrange
-            this.parsingStub.SplitInputIntoOperandsString = (userInput) => operandsCollection;
-            this.parsingStub.ReadOperatorsOutOfInputString = (userInput) => operatorsCollection;
-            this.calculationStub.CalculateCollectionOfDoubleCollectionOfChar = (doubleValues, charValues) => irrelevantCalculationResult;
-
-            // Act
-            testee.UserInput = "1 - 4 * 2";
-            testee.StartCalculation();
-
-            // Assert
-            testee.ErrorMessage.Should().Contain(expectedResult);
-        }
-
-        [TestMethod]
-        public void ShowMessageboxTwo()
+        public void InvalidInput_NoOperator()
         {
             operandsCollection = new Collection<double> { 1, 3 };
             operatorsCollection = new Collection<char> ();
-            expectedResult = testee.ErrorMessages[1];
+            expectedResult = testee.ErrorMessages[0];
 
             // Arrange
             this.parsingStub.SplitInputIntoOperandsString = (userInput) => operandsCollection;

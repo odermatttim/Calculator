@@ -15,8 +15,6 @@ namespace CalculatorLogic
     {
         string Calculate(string input);
 
-        event SequenceLogic.DgIllegalInput EvIllegalInputGivenIllegalOperator;
-
         event SequenceLogic.DgIllegalInput EvIllegalInputGivenNotEnoughOperands;
 
         event SequenceLogic.DgIllegalInput EvIllegalInputGivenIllegalOperand;

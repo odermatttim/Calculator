@@ -13,3 +13,12 @@
 C:\Work\Calculator\CalculatorConsole\bin\Debug\CalculatorConsole.exe.config
 C:\Work\Calculator\CalculatorConsole\obj\Debug\CalculatorConsole.exe
 C:\Work\Calculator\CalculatorConsole\obj\Debug\CalculatorConsole.pdb
+C:\Work\Calculator\CalculatorConsole\bin\Debug\CalculatorConsole.exe
+C:\Work\Calculator\CalculatorConsole\bin\Debug\CalculatorConsole.pdb
+C:\Work\Calculator\CalculatorConsole\bin\Debug\CalculatorBusinessLogic.dll
+C:\Work\Calculator\CalculatorConsole\bin\Debug\CalculatorLogic.dll
+C:\Work\Calculator\CalculatorConsole\bin\Debug\CalculatorParsing.dll
+C:\Work\Calculator\CalculatorConsole\bin\Debug\CalculatorBusinessLogic.pdb
+C:\Work\Calculator\CalculatorConsole\bin\Debug\CalculatorLogic.pdb
+C:\Work\Calculator\CalculatorConsole\bin\Debug\CalculatorParsing.pdb
+C:\Work\Calculator\CalculatorConsole\obj\Debug\CalculatorConsole.csprojResolveAssemblyReference.cache

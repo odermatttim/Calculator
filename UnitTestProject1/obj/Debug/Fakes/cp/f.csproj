@@ -8,7 +8,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
-    <ProjectGuid>03d7d086-d758-452e-857e-1daa321d5b5f</ProjectGuid>
+    <ProjectGuid>97226af8-5e9c-4ff0-b652-425269683cd5</ProjectGuid>
     <!-- update GUID here -->
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -51,32 +51,32 @@
       <Aliases>mqttf</Aliases>
     </Reference>
     <Reference Include="CalculatorParsing">
-      <HintPath>\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorParsing\bin\Debug\CalculatorParsing.dll</HintPath>
+      <HintPath>C:\Work\Calculator\CalculatorParsing\bin\Debug\CalculatorParsing.dll</HintPath>
       <Aliases>cp</Aliases>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Calculator">
-      <HintPath>\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\Calculator\bin\Debug\Calculator.exe</HintPath>
+      <HintPath>C:\Work\Calculator\Calculator\bin\Debug\Calculator.exe</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="CalculatorBusinessLogic">
-      <HintPath>\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorBusinessLogic\bin\Debug\CalculatorBusinessLogic.dll</HintPath>
+      <HintPath>C:\Work\Calculator\CalculatorBusinessLogic\bin\Debug\CalculatorBusinessLogic.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="CalculatorLogic">
-      <HintPath>\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorLogic\bin\Debug\CalculatorLogic.dll</HintPath>
+      <HintPath>C:\Work\Calculator\CalculatorLogic\bin\Debug\CalculatorLogic.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Castle.Core">
-      <HintPath>\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
+      <HintPath>C:\Work\Calculator\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="FluentAssertions.Core">
-      <HintPath>\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\net45\FluentAssertions.Core.dll</HintPath>
+      <HintPath>C:\Work\Calculator\net45\FluentAssertions.Core.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="FluentAssertions">
-      <HintPath>\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\net45\FluentAssertions.dll</HintPath>
+      <HintPath>C:\Work\Calculator\net45\FluentAssertions.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
@@ -84,7 +84,7 @@
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Moq">
-      <HintPath>\\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\packages\Moq.4.7.142\lib\net45\Moq.dll</HintPath>
+      <HintPath>C:\Work\Calculator\packages\Moq.4.7.142\lib\net45\Moq.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System.Configuration">

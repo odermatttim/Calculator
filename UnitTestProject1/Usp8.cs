@@ -33,7 +33,7 @@ namespace ParsingUnitTests
         }
 
         [TestMethod]
-        public void ErrorMessageShowsHintOne()
+        public void ErrorMessageShowsFirstHint()
         {
             expectedErrorMessage = testee.ErrorMessages[0];
             // Arrange
@@ -42,7 +42,7 @@ namespace ParsingUnitTests
             this.calculationStub.CalculateCollectionOfDoubleCollectionOfChar = (doubleValues, charValues) => irrelevantCalculationResult;
 
             // Act
-            testee.UserInput = "1.5 * 2";
+            testee.UserInput = "1.5 2";
             testee.StartCalculation();
 
             // Assert
@@ -50,16 +50,16 @@ namespace ParsingUnitTests
         }
 
         [TestMethod]
-        public void ErrorMessageShowsHintTwo()
+        public void ErrorMessageShowsSecondHint()
         {
             expectedErrorMessage = testee.ErrorMessages[1];
             // Arrange
-            this.parsingStub.SplitInputIntoOperandsString = (userInput) => new Collection<double> { 1.5 };
+            this.parsingStub.SplitInputIntoOperandsString = (userInput) => new Collection<double> { 1.5 , 2, 4};
             this.parsingStub.ReadOperatorsOutOfInputString = (userInput) => new Collection<char> {'+'};
             this.calculationStub.CalculateCollectionOfDoubleCollectionOfChar = (doubleValues, charValues) => irrelevantCalculationResult;
 
             // Act
-            testee.UserInput = "1.5 +";
+            testee.UserInput = "1.5 2 + 4";
             testee.StartCalculation();
 
             // Assert

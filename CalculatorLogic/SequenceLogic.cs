@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Data;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -19,10 +20,9 @@ namespace CalculatorLogic
         private Collection<double> operandsCollection;
 
         public delegate void DgIllegalInput();
-        public event DgIllegalInput EvIllegalInputGivenIllegalOperator;
         public event DgIllegalInput EvIllegalInputGivenNotEnoughOperands;
         public event DgIllegalInput EvIllegalInputGivenIllegalOperand;
-        
+
         public SequenceLogic(IParsing parsing, ICalculation calculation)
         {
             this.parsing = parsing;
@@ -32,11 +32,6 @@ namespace CalculatorLogic
         public string Calculate(string input)
         {
             this.operatorsCollection = this.parsing.ReadOperatorsOutOfInput(input);
-            if (input.Contains("*") || input.Contains(":") || input.Contains("/"))
-            {
-                EvIllegalInputGivenIllegalOperator();
-                return null;
-            }
             try
             {
                 this.operandsCollection = this.parsing.SplitInputIntoOperands(input);
@@ -46,7 +41,7 @@ namespace CalculatorLogic
                 EvIllegalInputGivenIllegalOperand();
                 return null;
             }
-            if (this.operatorsCollection.Count == 0 || this.operandsCollection.Count <= 1)
+            if (parsing.AmountOfOperandsAndOperatorsIsWrong(this.operandsCollection, this.operatorsCollection))
             {
                 EvIllegalInputGivenNotEnoughOperands();
                 return null;

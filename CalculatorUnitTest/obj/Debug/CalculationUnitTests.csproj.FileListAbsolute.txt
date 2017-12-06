@@ -11,3 +11,16 @@
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorUnitTest\obj\Debug\CalculationUnitTests.csprojResolveAssemblyReference.cache
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorUnitTest\obj\Debug\CalculatorUnitTest.dll
 \\tromsgfp231\u_odermatt$\my documents\visual studio 2013\Projects\Calculator\CalculatorUnitTest\obj\Debug\CalculatorUnitTest.pdb
+C:\Work\Calculator\CalculatorUnitTest\bin\Debug\CalculatorUnitTest.dll
+C:\Work\Calculator\CalculatorUnitTest\bin\Debug\CalculatorUnitTest.pdb
+C:\Work\Calculator\CalculatorUnitTest\bin\Debug\CalculatorBusinessLogic.dll
+C:\Work\Calculator\CalculatorUnitTest\bin\Debug\FluentAssertions.Core.dll
+C:\Work\Calculator\CalculatorUnitTest\bin\Debug\FluentAssertions.dll
+C:\Work\Calculator\CalculatorUnitTest\bin\Debug\CalculatorBusinessLogic.pdb
+C:\Work\Calculator\CalculatorUnitTest\bin\Debug\FluentAssertions.pdb
+C:\Work\Calculator\CalculatorUnitTest\bin\Debug\FluentAssertions.xml
+C:\Work\Calculator\CalculatorUnitTest\bin\Debug\FluentAssertions.Core.pdb
+C:\Work\Calculator\CalculatorUnitTest\bin\Debug\FluentAssertions.Core.xml
+C:\Work\Calculator\CalculatorUnitTest\obj\Debug\CalculationUnitTests.csprojResolveAssemblyReference.cache
+C:\Work\Calculator\CalculatorUnitTest\obj\Debug\CalculatorUnitTest.dll
+C:\Work\Calculator\CalculatorUnitTest\obj\Debug\CalculatorUnitTest.pdb

@@ -30,7 +30,7 @@ namespace IntegrationTests
         }
 
         [TestMethod]
-        public void ValidOperationOne()
+        public void SimpleValidOperation()
         {
             expectedResult = "3";
             //Act
@@ -41,7 +41,7 @@ namespace IntegrationTests
         }
 
         [TestMethod]
-        public void ValidOperationTwo()
+        public void ComplexValidOperation()
         {
             expectedResult = "-2053.7578";
             //Act
@@ -52,20 +52,31 @@ namespace IntegrationTests
         }
 
         [TestMethod]
-        public void InvalidOperationOne()
+        public void SimpleOperationWithMulDiv()
         {
-            expectedResult = testee.ErrorMessages[0];
+            expectedResult = "2";
             //Act
             testee.UserInput = "1 * 2";
-            testee.StartCalculation();
+            result = testee.StartCalculation();
             //Assert
-            testee.ErrorMessage.Should().Contain(expectedResult);
+            result.Should().Contain(expectedResult);
         }
 
         [TestMethod]
-        public void InvalidOperationTwo()
+        public void ComplexOperationWithMulDiv()
         {
-            expectedResult = testee.ErrorMessages[1];
+            expectedResult = "191.42";
+            //Act
+            testee.UserInput = "4 / 5 * 55 - 8.2 + 47.2 / 5 * 3 * 6 - 12 - 2.3";
+            result = testee.StartCalculation();
+            //Assert
+            result.Should().Contain(expectedResult);
+        }
+
+        [TestMethod]
+        public void MissingOperatorOperation()
+        {
+            expectedResult = testee.ErrorMessages[0];
             //Act
             testee.UserInput = "1 2";
             testee.StartCalculation();
@@ -74,9 +85,9 @@ namespace IntegrationTests
         }
 
         [TestMethod]
-        public void InvalidOperationThree()
+        public void ParsingErrorOperation()
         {
-            expectedResult = testee.ErrorMessages[2];
+            expectedResult = testee.ErrorMessages[1];
             //Act
             testee.UserInput = "4.31 - 30.068 + 0.0002 2028";
             testee.StartCalculation();

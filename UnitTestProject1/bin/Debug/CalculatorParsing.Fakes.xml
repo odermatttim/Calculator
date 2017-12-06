@@ -22,6 +22,9 @@
         <member name="M:CalculatorParsing.Fakes.ShimParsing.Bind(CalculatorParsing.IParsing)">
             <summary>Binds the members of the interface to the shim.</summary>
         </member>
+        <member name="P:CalculatorParsing.Fakes.ShimParsing.AmountOfOperandsAndOperatorsIsWrongCollectionOfDoubleCollectionOfChar">
+            <summary>Sets the shim of Parsing.AmountOfOperandsAndOperatorsIsWrong(Collection`1&lt;Double&gt; operandsCollection, Collection`1&lt;Char&gt; operatorsCollection)</summary>
+        </member>
         <member name="P:CalculatorParsing.Fakes.ShimParsing.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
@@ -37,6 +40,9 @@
         <member name="T:CalculatorParsing.Fakes.ShimParsing.AllInstances">
             <summary>Define shims for all instances members</summary>
         </member>
+        <member name="P:CalculatorParsing.Fakes.ShimParsing.AllInstances.AmountOfOperandsAndOperatorsIsWrongCollectionOfDoubleCollectionOfChar">
+            <summary>Sets the shim of Parsing.AmountOfOperandsAndOperatorsIsWrong(Collection`1&lt;Double&gt; operandsCollection, Collection`1&lt;Char&gt; operatorsCollection)</summary>
+        </member>
         <member name="P:CalculatorParsing.Fakes.ShimParsing.AllInstances.ReadOperatorsOutOfInputString">
             <summary>Sets the shim of Parsing.ReadOperatorsOutOfInput(String userInput)</summary>
         </member>
@@ -48,6 +54,12 @@
         </member>
         <member name="M:CalculatorParsing.Fakes.StubIParsing.#ctor">
             <summary>Initializes a new instance of type StubIParsing</summary>
+        </member>
+        <member name="F:CalculatorParsing.Fakes.StubIParsing.AmountOfOperandsAndOperatorsIsWrongCollectionOfDoubleCollectionOfChar">
+            <summary>Sets the stub of IParsing.AmountOfOperandsAndOperatorsIsWrong(Collection`1&lt;Double&gt; operandsCollection, Collection`1&lt;Char&gt; operatorsCollection)</summary>
+        </member>
+        <member name="M:CalculatorParsing.Fakes.StubIParsing.cp::CalculatorParsing#IParsing#AmountOfOperandsAndOperatorsIsWrong(System.Collections.ObjectModel.Collection{System.Double},System.Collections.ObjectModel.Collection{System.Char})">
+            <summary>Sets the stub of IParsing.AmountOfOperandsAndOperatorsIsWrong(Collection`1&lt;Double&gt; operandsCollection, Collection`1&lt;Char&gt; operatorsCollection)</summary>
         </member>
         <member name="M:CalculatorParsing.Fakes.StubIParsing.cp::CalculatorParsing#IParsing#ReadOperatorsOutOfInput(System.String)">
             <summary>Sets the stub of IParsing.ReadOperatorsOutOfInput(String userInput)</summary>

@@ -22,7 +22,6 @@ namespace CalculatorConsole
 
         private static void Main(string[] args)
         {
-            sequenceLogic.EvIllegalInputGivenIllegalOperator += new SequenceLogic.DgIllegalInput(WriteMessageIllegalOperator);
             sequenceLogic.EvIllegalInputGivenNotEnoughOperands += new SequenceLogic.DgIllegalInput(WriteMessageNotEnoughOperands);
             sequenceLogic.EvIllegalInputGivenIllegalOperand += new SequenceLogic.DgIllegalInput(WriteMessageIllegalOperand);
             while (true)
@@ -34,14 +33,9 @@ namespace CalculatorConsole
             }
         }
 
-        private static void WriteMessageIllegalOperator()
-        {
-            Console.WriteLine("Error occured. Only \"+\", \"-\" and numbers are allowed");
-        }
-
         private static void WriteMessageNotEnoughOperands()
         {
-            Console.WriteLine("Error occured. Use at least \"+\" or \"-\" and two numbers.");
+            Console.WriteLine("Error occured. Use at least one operator and two operands.");
         }
 
         private static void WriteMessageIllegalOperand()

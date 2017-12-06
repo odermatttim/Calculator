@@ -13,12 +13,12 @@ namespace ParsingUnitTests
     [TestClass]
     public class Usp2
     {
-        private Calculation calculation;
+        private Calculation testee;
 
         [TestInitialize]
         public void SetUp()
         {
-            calculation = new Calculation();
+            testee = new Calculation();
         }
 
         [TestMethod]
@@ -28,15 +28,15 @@ namespace ParsingUnitTests
             double Result;
             Collection<double> operandsCollection = new Collection<double>()
             {
-                4, 6.5, 0.5
+                4, 6.5, 4, 2, 2, 0.5
             };
             Collection<char> operatorsCollection = new Collection<char>()
             {
-                '+', '-'
+                '+', '*', '/', '-', '*'
             };
-            Result = calculation.Calculate(operandsCollection, operatorsCollection);
+            Result = testee.Calculate(operandsCollection, operatorsCollection);
             //Assert
-            Result.Should().Be(10);
+            Result.Should().Be(16);
         }
     }
 }
