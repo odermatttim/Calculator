@@ -12,7 +12,7 @@
          <Members>
           <Member Name="#ShowErrorMessageBox(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-12-06 11:38:48Z" FixCategory="DependsOnFix">
+            <Message Id="System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-12-07 14:05:51Z" FixCategory="DependsOnFix">
              <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Work\Calculator\Calculator" File="CalculatorViewModel.cs" Line="59">Method 'CalculatorViewModel.ShowErrorMessageBox(string)' passes a literal string as parameter 'caption' of a call to 'MessageBox.Show(string, string, MessageBoxButton)'. Retrieve the following string(s) from a resource table instead: "Error".</Issue>
             </Message>
            </Messages>
@@ -23,7 +23,7 @@
          <Members>
           <Member Name="#CalculateButton_Click(System.Object,System.Windows.RoutedEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message Id="System.Windows.Controls.TextBlock.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-12-06 11:38:48Z" FixCategory="DependsOnFix">
+            <Message Id="System.Windows.Controls.TextBlock.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-12-07 14:05:51Z" FixCategory="DependsOnFix">
              <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Work\Calculator\Calculator" File="MainWindow.xaml.cs" Line="44">Method 'MainWindow.CalculateButton_Click(object, RoutedEventArgs)' passes a literal string as parameter 'value' of a call to 'TextBlock.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "-".</Issue>
             </Message>
            </Messages>

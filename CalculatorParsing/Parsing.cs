@@ -43,11 +43,11 @@ namespace CalculatorParsing
         {
             if (operatorsCollection.Count == 0 || operandsCollection.Count <= 1)
             {
-                return false;
+                return true;
             }
             else
             {
-                return true;   
+                return false;   
             }
         }
     }

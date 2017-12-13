@@ -24,3 +24,5 @@ C:\Work\Calculator\ParsingUnitTests\bin\Debug\FluentAssertions.Core.xml
 C:\Work\Calculator\ParsingUnitTests\obj\Debug\ParsingUnitTests.csprojResolveAssemblyReference.cache
 C:\Work\Calculator\ParsingUnitTests\obj\Debug\ParsingUnitTests.dll
 C:\Work\Calculator\ParsingUnitTests\obj\Debug\ParsingUnitTests.pdb
+C:\Work\Calculator\ParsingUnitTests\bin\Debug\ParsingUnitTests.dll.CodeAnalysisLog.xml
+C:\Work\Calculator\ParsingUnitTests\bin\Debug\ParsingUnitTests.dll.lastcodeanalysissucceeded

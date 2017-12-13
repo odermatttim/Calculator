@@ -24,3 +24,5 @@ C:\Work\Calculator\CalculatorUnitTest\bin\Debug\FluentAssertions.Core.xml
 C:\Work\Calculator\CalculatorUnitTest\obj\Debug\CalculationUnitTests.csprojResolveAssemblyReference.cache
 C:\Work\Calculator\CalculatorUnitTest\obj\Debug\CalculatorUnitTest.dll
 C:\Work\Calculator\CalculatorUnitTest\obj\Debug\CalculatorUnitTest.pdb
+C:\Work\Calculator\CalculatorUnitTest\bin\Debug\CalculatorUnitTest.dll.CodeAnalysisLog.xml
+C:\Work\Calculator\CalculatorUnitTest\bin\Debug\CalculatorUnitTest.dll.lastcodeanalysissucceeded

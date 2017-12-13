@@ -16,3 +16,5 @@ C:\Work\Calculator\CalculatorLogic\bin\Debug\CalculatorParsing.pdb
 C:\Work\Calculator\CalculatorLogic\obj\Debug\CalculatorLogic.csprojResolveAssemblyReference.cache
 C:\Work\Calculator\CalculatorLogic\obj\Debug\CalculatorLogic.dll
 C:\Work\Calculator\CalculatorLogic\obj\Debug\CalculatorLogic.pdb
+C:\Work\Calculator\CalculatorLogic\bin\Debug\CalculatorLogic.dll.CodeAnalysisLog.xml
+C:\Work\Calculator\CalculatorLogic\bin\Debug\CalculatorLogic.dll.lastcodeanalysissucceeded

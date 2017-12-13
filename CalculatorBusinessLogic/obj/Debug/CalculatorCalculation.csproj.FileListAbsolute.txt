@@ -6,3 +6,5 @@ C:\Work\Calculator\CalculatorBusinessLogic\bin\Debug\CalculatorBusinessLogic.dll
 C:\Work\Calculator\CalculatorBusinessLogic\bin\Debug\CalculatorBusinessLogic.pdb
 C:\Work\Calculator\CalculatorBusinessLogic\obj\Debug\CalculatorBusinessLogic.dll
 C:\Work\Calculator\CalculatorBusinessLogic\obj\Debug\CalculatorBusinessLogic.pdb
+C:\Work\Calculator\CalculatorBusinessLogic\bin\Debug\CalculatorBusinessLogic.dll.CodeAnalysisLog.xml
+C:\Work\Calculator\CalculatorBusinessLogic\bin\Debug\CalculatorBusinessLogic.dll.lastcodeanalysissucceeded

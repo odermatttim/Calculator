@@ -20,8 +20,9 @@ namespace CalculatorLogic
         private Collection<double> operandsCollection;
 
         public delegate void DgIllegalInput();
-        public event DgIllegalInput EvIllegalInputGivenNotEnoughOperands;
-        public event DgIllegalInput EvIllegalInputGivenIllegalOperand;
+
+        public event DgIllegalInput EvIllegalInputGivenNotEnoughOperands = delegate { };
+        public event DgIllegalInput EvIllegalInputGivenIllegalOperand = delegate { };
 
         public SequenceLogic(IParsing parsing, ICalculation calculation)
         {

@@ -22,3 +22,5 @@ C:\Work\Calculator\CalculatorConsole\bin\Debug\CalculatorBusinessLogic.pdb
 C:\Work\Calculator\CalculatorConsole\bin\Debug\CalculatorLogic.pdb
 C:\Work\Calculator\CalculatorConsole\bin\Debug\CalculatorParsing.pdb
 C:\Work\Calculator\CalculatorConsole\obj\Debug\CalculatorConsole.csprojResolveAssemblyReference.cache
+C:\Work\Calculator\CalculatorConsole\bin\Debug\CalculatorConsole.exe.CodeAnalysisLog.xml
+C:\Work\Calculator\CalculatorConsole\bin\Debug\CalculatorConsole.exe.lastcodeanalysissucceeded
